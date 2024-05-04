@@ -1,0 +1,33 @@
+# https://github.com/actions/labeler
+
+Doc Change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "**/*.excalidraw"
+          - "docs/**"
+
+GitHub:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/**"
+
+Dep Change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/package.json" # JS
+
+Blog Change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "blog/**"
+
+Page Change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/pages/**"
+
+Version Change:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "versioned_docs/**"
