@@ -1,0 +1,20 @@
+# Declaratively manage GitHub Labels
+# https://github.com/lannonbr/issue-label-manager-action
+on:
+  - issues
+  - workflow_dispatch
+name: Sync GitHub Issue Labels
+jobs:
+  labels:
+    name: Sync
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lannonbr/issue-label-manager-action@3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          delete: true # will delete any labels that aren't in the .github/labels.json
