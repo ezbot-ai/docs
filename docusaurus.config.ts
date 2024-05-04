@@ -37,15 +37,13 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/ezbot-ai/docs/tree/main/packages/create-docusaurus/templates/shared/", // TODO: Is this correct?
+          editUrl: "https://github.com/ezbot-ai/docs/tree/main/", // TODO: Is this correct?
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/ezbot-ai/docs/tree/main/packages/create-docusaurus/templates/shared/", // TODO: Is this correct?
+          editUrl: "https://github.com/ezbot-ai/docs/tree/main/", // TODO: Is this correct?
         },
         theme: {
           customCss: "./src/css/custom.css",
