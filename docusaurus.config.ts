@@ -99,45 +99,26 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        // {
-        //   title: "Docs",
-        //   items: [
-        //     {
-        //       label: "Tutorial",
-        //       to: "/docs/intro",
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: "Community",
-        //   items: [
-        //     {
-        //       label: "Stack Overflow",
-        //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        //     },
-        //     {
-        //       label: "Discord",
-        //       href: "https://discordapp.com/invite/docusaurus",
-        //     },
-        //     {
-        //       label: "Twitter",
-        //       href: "https://twitter.com/ezbot_ai",
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Blog",
-        //       to: "/blog",
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: "https://github.com/ezbot-ai/docs",
-        //     },
-        //   ],
-        // },
+        {
+          title: "Legal",
+          items: [
+            {
+              html: "<a href='#' onclick='window.displayPreferenceModal();return false;' id='termly-consent-preferences' class='footer__link-item'>Consent Preferences</a>",
+            },
+            {
+              label: "Privacy Policy",
+              href: "https://app.termly.io/document/privacy-policy/399bfe57-580d-4feb-bf4f-91c34aca91d0",
+            },
+            {
+              label: "Terms and Conditions",
+              href: "https://app.termly.io/document/terms-of-service/fe66e8d4-698a-449d-9147-b1a324e29e1f",
+            },
+            {
+              label: "Cookie Policy",
+              href: "https://app.termly.io/document/cookie-policy/0a7414ae-9889-4b74-a15f-d2c83f7e1710",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} EZBOT AI COMPANY. Built with Docusaurus.`,
     },
@@ -146,6 +127,7 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  clientModules: [require.resolve("./src/js/_termly.js")],
 };
 
 export default config;
