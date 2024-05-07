@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+ezbot is a powerful platform for delivering optimal digital experiences to your customers, without the hassle of running and analyzing individual experiments. It's built for digital content creators and developers to easily try changes on their websites and apps and quickly improve conversion rates.
+
+ezbot was founded under the belief that humans can achieve their greatest creative potential when they are freed from the mundane technical difficulties of experimentation so they can focus solely on creating intuitive and effective experiences for their customers.
+
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
