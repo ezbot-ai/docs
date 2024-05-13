@@ -1,4 +1,4 @@
-name: Admin UI Lint
+name: Test Build Docs
 on:
   pull_request:
     branches:
