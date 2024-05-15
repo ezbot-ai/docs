@@ -111,7 +111,7 @@ Examples
 <details>  
 <summary>**Organization**</summary>  
 <div>  
-<div>The bigger account that has to pay for things </div>  
+<div>The bigger account type that has to pay for things </div>  
 <br/>  
 <details>  
 <summary>  
