@@ -17,7 +17,7 @@ Next, you will be directed to either create a new organization or join an existi
 
 To create an organization, you will need to start a subscription through stripe. There are monthly and annual prices. Once you have filled out your payment and organization information on Stripe, you will be directed back to the onboarding flow.
 
-# Step 2: Strategize
+## Step 2: Strategize
 
 ### What Do You Want To Change?
 
@@ -35,7 +35,7 @@ Anything you see that you might want to try changing is going to become a **vari
 
 We want to encourage you to think about the sorts of people that visit your websites and what information you might have on those people. These are called **attributes**, and there is more on them in the [variables and attributes section](05-variables-attributes.md).
 
-# Step 3: Decide Which Interface to Use
+## Step 3: Decide Which Interface to Use
 
 There are two ways to use ezbot: You can either use our REST API with code or a visual editor with a graphical user interface (GUI). If you use the REST API, you do not need to install anything. If you'd like to use the WYSIWYG (what-you-see-is-what-you-get) editor, then you'll have to install ezbot in one of the following ways:
 
@@ -49,7 +49,7 @@ Coming Soon :)
 
 Next, you'll be setting up projects and choosing your reward function.
 
-# Step 4: Create and Work on Projects
+## Step 4: Create and Work on Projects
 
 At this point, you should be able to create a project, or if you joined an existing organization, you'll be bale to see their existing projects. If you've joined an organization with existing projects, you should get in touch with the person who started those projects to understand their project settings and goals.
 

@@ -15,17 +15,17 @@ From the perspective of the users there hasn't been much change. Some people wil
 </div>  
 </details>
 
-### Serving What Works
+## Serving What Works
 
 After a user has created a **project** and **variations** to try, ezbot can start working its magic. It starts off by serving **variations** to users that are not in the **holdback** group, and watches what users do with each **variation** of the site. As more people visit the site, ezbot can spot patterns and learn which **variations** worked best for users with specific **attributes**. Then, when someone lands on your website, ezbot will serve them the **variation** that will maximize your **reward strategy**.
 
 ![how it works](../img/how_ezbot_works.png)
 
-### Keeping Up With Changing Preferences
+## Keeping Up With Changing Preferences
 
 Your website will not only serve different **variations** to users with different **attributes**, but will also be able to serve different **variations** at different times. People may prefer different messaging, layouts, or colors at different times of day or during different seasons. ezbot automatically notices these preference changes and will continue to serve the optimal **variations** for people over time.
 
-# Get Started Quickly
+## Get Started Quickly
 
 ezbot works on any website with any framework, so you can start using ezbot the day you sign up. There are two ways to use ezbot: with a visual (WYSIWYG) editor or through our REST API.
 
