@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://docs.ezbot.ai/sitemap.xml
