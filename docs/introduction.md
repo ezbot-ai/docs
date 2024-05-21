@@ -14,7 +14,7 @@ ezbot was founded under the belief that humans can achieve their greatest creati
 
 # Why Do People Experiment On Websites?
 
-**People are really bad at predicting what other people will do on their websites.** There are game shows like guessthetest.com that highlight how bad people are at this. Furthermore, the more changes you make on your website, the harder it is to predict what people will do. Which checkout button will drive the most sales? What headlines will get people to read more articles?
+**People are really bad at predicting what other people will do on their websites.** There are games like [guessthetest.com](https://guessthetest.com/archived-tests/) that highlight how bad people are at this. Furthermore, the more changes you make on your website, the harder it is to predict what people will do. Which checkout button will drive the most sales? What headlines will get people to read more articles?
 
 **Experimentation is supposed to solve this problem but it's really hard to do.** Instead of guessing what will happen if you change your website, you can plan experiments and test which version works best. This sounds easy and straightforward but requires a lot of expertise: programming, data analysis, statistics, and experimental design.
 If you want to run multiple experiments at the same time, then you need a LOT of people with time and expertise.
@@ -27,4 +27,4 @@ Computers and Artificial Intelligence have made it easier for people to do tedio
 
 Think of ezbot as your optimization calculator. **You don't need an experimentation expert to optimize your website anymore, because ezbot does this for you.** All you need to do is decide what layouts, designs, copy, or pricing you want to try, and ezbot will serve the best versions of your website. With ezbot, one person can try more changes on their site in one week than whole experimentation teams could test in a month.
 
-**People are free to generate ideas; ezbot does the math to figure out which ideas make the most money.**
+**People are free to generate ideas; ezbot does the math to figure out which ideas make you the most money.**
