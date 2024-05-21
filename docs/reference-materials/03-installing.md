@@ -155,7 +155,7 @@ Below is just an example. After initializing ezbot, you can use the `window.ezbo
 
 ## Credits
 
-`ezbot/ezbot-javascript` is maintained by [ezbot](ezbot.ai) and many [contributors](https://github.com/ezbot/ezbot-javascript/graphs/contributors).
+`ezbot/ezbot-javascript` is maintained by [ezbot](https://ezbot.ai) and many [contributors](https://github.com/ezbot/ezbot-javascript/graphs/contributors).
 
 ### First-party Code
 
