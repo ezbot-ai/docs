@@ -33,7 +33,7 @@ Anything you see that you might want to try changing is going to become a **vari
 
 ### What Kinds of Users Visit Your Site?
 
-We want to encourage you to think about the sorts of people that visit your websites and what information you might have on those people. These are called **attributes**, and there is more on them in the [variables and attributes section](05-variables-attributes.md).
+We want to encourage you to think about the sorts of people that visit your websites and what information you might have on those people. These are called **attributes**, and there you can learn more about them in the [variables and attributes section](05-variables-attributes.md).
 
 ## Step 3: Decide Which Interface to Use
 
@@ -41,11 +41,11 @@ There are two ways to use ezbot: You can either use our REST API with code or a 
 
 ### Install the JavaScipt Snippet
 
-Coming Soon :)
+More details coming soon -- for now, see our [installation reference materials](../reference-materials/03-installing.md).
 
-### Install the Node SDK
+### Install the Browser SDK
 
-Coming Soon :)
+More details coming soon -- for now, see our [installation reference materials](../reference-materials/03-installing.md).
 
 Next, you'll be setting up projects and choosing your reward function.
 

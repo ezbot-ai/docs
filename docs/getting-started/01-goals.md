@@ -10,7 +10,7 @@ Instead of carving up traffic first and running experiments to learn what works 
 
 ezbot was formed around two key premises:
 
-1. **People are terrible at predicting which user experience will perform best** (see guessthetest.com).
-2. **The #1 predictor of ROI on experimentation programs is the number of variations tested.**
+1. **People are terrible at predicting which user experience will perform best** (Try [Guessing The Test](https://guessthetest.com/archived-tests/) yourself!).
+2. **The #1 predictor of ROI on experimentation programs is the number of variations tested.** You can learn more about the value of experimentation [here](https://www.optimizely.com/the-evolution-of-experimentation/).
 
 Because of this, ezbot prioritizes making it easy for you to test as many variations as possible in order to deliver as much value as possible.

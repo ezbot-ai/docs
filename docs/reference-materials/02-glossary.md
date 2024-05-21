@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Glossary
+# Glossary of ezbot Terms
 
 <details>  
 <summary>**Variable**</summary>  
@@ -13,10 +13,11 @@ sidebar_position: 2
 <summary>  
 Examples 
 </summary>  
-<div> The copy (text) written in a section of your website.</div>  
+<div> **Button Color:**  </div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Variation**</summary>  
 <div>  
@@ -30,6 +31,7 @@ Examples
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Attribute**</summary>  
 <div>  
@@ -39,10 +41,11 @@ Examples
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Reward**</summary>  
 <div>  
@@ -52,10 +55,11 @@ Examples
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Prediction**</summary>  
 <div>  
@@ -65,72 +69,79 @@ Examples
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Holdback**</summary>  
 <div>  
-<div>This is like a control group in a science experiment. We compare how users in the optimized group (with allowed and default variations) perform compared to the holdback group (showing all default variations). This helps us measure the relative impact of your experimentation. You control how much traffic goes to the holdback group (e.g., 20%) to balance risk or maximize your potential ROI from ezbot. </div>  
+<div>This is like a control group in a science experiment. We compare how users in the optimized group performs compared to the holdback group. The optimized group shows both the default variations and the variations you are testing. The holdback groups only shows the default variations. </div>
+<br/>  
+<div>Having a holdback group helps us measure the relative impact of your experimentation efforts. You control how much traffic goes to the holdback group (e.g., 20%) either to balance risk or maximize your potential ROI from ezbot. See more about how to decide on your holdback percentage in Step 4 of Getting Started. </div>  
 <br/>  
 <details>  
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
-</details>  
-</div>  
+<div> example </div>   
+</details> 
+</div> 
 </details>
+
 <details>  
 <summary>**Checkpoint**</summary>  
 <div>  
-<div>I have no idea what this is. </div>  
+<div> An AI model's policy at any given point in time. </div>  
 <br/>  
 <details>  
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Project**</summary>  
 <div>  
-<div>What is this. All of the variables on the url? </div>  
+<div> An **organization** can have multiple **projects** if their subscription is active. **Projects** hold all of the data you need for a given set of experiments on your website or app. Each **organization** can have multiple **projects**. **Projects** contain variables, variations, attributes, and holdback settings.  This is an organizational tool to keep your data in a bucket that is scoped to each project. For best results with ezbot, an organization have as few projects as possible.  </div>  
 <br/>  
 <details>  
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**Organization**</summary>  
 <div>  
-<div>The bigger account type that has to pay for things </div>  
+<div> The **organization* is the account type that paid for and manages the subscription. **Organizations** can have up to five users and multiple projects.  </div>  
 <br/>  
 <details>  
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
+
 <details>  
 <summary>**User Account**</summary>  
 <div>  
-<div>The smaller account that joins orgs and doesn't have to pay for things  </div>  
+<div>The **user account** is each person's login credentials. In order to use ezbot, **user accounts** should be associated with an **organization** that has an active subscription.   </div>  
 <br/>  
 <details>  
 <summary>  
 Examples 
 </summary>  
-<div> moar examples.</div>  
+<div> examples.</div>  
 </details>  
 </div>  
 </details>
