@@ -65,6 +65,8 @@ const config: Config = {
         // ```
         // language: ["en", "zh"],
         // ```
+        docsRouteBasePath: "/",
+        indexBlog: false, // Turn when when we have a blog
       },
     ],
   ],
