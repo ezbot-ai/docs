@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome
 
-Welcome to ezbot Docs! This is the place to learn about how to use ezbot to optimize your website.
+Welcome to ezbot Docs! This is the place to learn how to use ezbot to optimize your website.
 
 ## Docs Structure
 

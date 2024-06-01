@@ -6,16 +6,16 @@ sidebar_position: 2
 
 ## Get Started Quickly and Easily
 
-ezbot works with any website, app, and framework, so users can get started quickly. Signing up and installing ezbot is simple, so users can start using ezbot the day they sign up.
+ezbot works with any website, app, and framework, so users can get started quickly. [Signing up](https://app.ezbot.ai/sign-up) and installing ezbot is simple, so you can start using ezbot the day you sign up. Every ezbot subscription comes with a month one free trial so you can try out ezbot risk-free.
 
 ### Two Ways to Use ezbot
 
-ezbot comes in two forms:
+You can use ezbot in two ways:
 
 - **Visual Editor**: Designed to empower _non-technical_ users to create and run experiments on websites without writing code.
-- **REST API**: For developers who want to use ezbot's powerful optimization engine directly, anywhere in their stack.
+- **JS SDK and/or REST API**: For developers who want to use ezbot's powerful optimization engine directly, anywhere in their stack.
 
-Both forms are powered by the same platform. To use our Visual Editor, you'll need to install the JavaScript Snippet or browser SDK. For more details, check out the next [section on getting started.](/getting-started)
+**Both implementations are powered by the same platform and can be used together.** For example, it may be faster and easier to use our Visual Editor to run a quick messaging test, rather than involving an engineer to implement a new variable in your code. To use our Visual Editor, you'll need to install the JavaScript Snippet or browser SDK. For more details, check out the next [section on getting started.](/getting-started)
 
 ## No More Guessing
 

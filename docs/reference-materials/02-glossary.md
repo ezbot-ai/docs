@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Glossary of ezbot Terms
+# Glossary
 
 <details>  
 <summary>**Variable**</summary>  
