@@ -37,9 +37,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ezbot-ai/docs/tree/main/", // TODO: Is this correct?
+          editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
         },
         blog: false,
         theme: {
@@ -93,9 +91,9 @@ const config: Config = {
           label: "GitHub",
           position: "right",
         },
-        {
-          type: "docsVersionDropdown",
-        },
+        // {
+        //   type: "docsVersionDropdown", // Turn me on if we have multiple versions
+        // },
       ],
     },
     footer: {
