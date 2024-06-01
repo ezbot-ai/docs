@@ -17,4 +17,4 @@ Our docs are organized into the following sections:
 - [Guides](/category/guides): Explore how to use ezbot in common use cases.
 - [Reference Materials](category/reference-materials): Take a deeper dive into the concepts and features of ezbot.
 
-If you're new to this kind of thing, we recommend starting with the [Introduction](/introduction) section.
+If you're new to this kind of thing, we recommend starting with the [Introduction](/introduction/mission) section.
