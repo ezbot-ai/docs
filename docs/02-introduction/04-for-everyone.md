@@ -16,11 +16,3 @@ ezbot was founded under the belief that humans can achieve their greatest creati
 ezbot makes it easy for marketers, product managers, developers, and business owners to optimize their digital properties without the hassle of running and analyzing individual experiments. ezbot was built to make it as easy and safe as possible to try changes on a websites or app to determine which works best for their users.
 
 ezbot continuously tests the variations you create and serves the best ones to your users. Low performing-variants automatically receive less traffic over time. This way, you can focus on creating new experiences and let ezbot figure out which ones work best.
-
-## How to Win with ezbot:
-
-- **Identify your test areas:** Choose the UX elements you want to optimize, like button placements, content variations, design layouts, or pricing. The only limit to what you can test with ezbot is your imagination.
-- **Define your parameters:** Create the variations in our Visual Editor or in your code. We only test what you allow us to test.
-- **Sit back and relax:** Ezbot tests combinations of your variations, learns which combinations are best for each kind of user, and automatically delivers winning experiences.
-- **Embrace a "let's try it" culture:** With Ezbot, testing is quick, safe, and data-driven without time-consuming analyses, so why not just skip the debate and try it?
-- **See your ROI soar:** Ezbot identifies winning variations and ramps them up, while ramping down underperformers.

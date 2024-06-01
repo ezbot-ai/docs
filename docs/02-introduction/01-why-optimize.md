@@ -5,7 +5,7 @@ icon: 🚀
 
 # Why Optimize?
 
-Imagine you have a website or app with a specific goal, like selling products or engaging visitors. Once it's live, the real challenge begins: optimizing it to achieve those goals. Even the smallest changes, like the size or color of a call-to-action button, can significantly impact how users behave and affect your business outcomes. This is where ezbot comes in, helping you test different versions of your website or app to see what works best for your audience and get better results.
+Most websites and apps are built with a specific goal, like selling products or engaging visitors. Once it's live, the real challenge begins: optimizing it to achieve those goals. Even the smallest changes, like the size or color of a call-to-action button, can significantly impact how users behave and affect your business outcomes. This is where ezbot comes in, helping you test different versions of your website or app to see what works best for your audience and get better results.
 
 The tricky part about optimization is that users often don't know what they want, but they sure know when something isn't meeting their expectations. What works for one site or app might not work for another, and what’s effective today might not be tomorrow.
 
