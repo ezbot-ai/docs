@@ -3,7 +3,7 @@ sidebar_position: 3
 sidebar_label: Problems w/ Experimentation
 ---
 
-# Problems with Traditional Experimentation
+# Problems with Experimentation
 
 Running A/B tests to improve your website or app's conversion rates can be a powerful tool, but it's not without its challenges. Let’s explore some of the common hurdles you might face when using traditional experimentation methods.
 
@@ -36,9 +36,13 @@ Detecting small differences between variations takes time and a lot of traffic. 
 
 Additionally, the deeper down your funnel you want to run your test, the lower the traffic and the longer the expected experiment run-time. For instance, if you want to run a test on your checkout page and only 3% of your users visit that page, reaching the traffic necessary for statistical significance can be a major challenge.
 
-Even with top-notch A/B testing programs, the success rate is only about 20%. This means that 80% of your experiments might not give you useful insights, and may only confuse you.
+:::info
 
-These high traffic requirements make it tough for smaller companies to use A/B testing effectively without a lot of traffic or very long experiment times.Plus, issues like sample ratio mismatch can invalidate your results, adding another layer of complexity.
+Even with top-notch A/B testing programs, the **win rate is only about 20%.** This means that 80% of your experiments might not give you useful insights, and may only confuse you.
+
+:::
+
+These high traffic requirements make it tough for smaller companies to use A/B testing effectively without a lot of traffic or very long experiment times. Plus, issues like sample ratio mismatch can invalidate your results, adding another layer of complexity.
 
 :::tip
 

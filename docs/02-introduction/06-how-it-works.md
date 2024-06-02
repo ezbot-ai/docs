@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # How ezbot Works
 
-ezbot is an artificial intelligence system that watches over your website. When a user uses your website or app, ezbot watches them and learns from their behavior. The next time a similar user uses your website or app, ezbot uses what it learned to deliver an experience that is more likely to lead to a successful outcome. Over time, ezbot learns what works best for different types of users and serves them the optimal experience.
+ezbot is an artificial intelligence system that watches over your website. When a user uses your website or app, ezbot watches them and learns from their behavior. The next time a similar user visits, ezbot uses this knowledge to deliver an experience more likely to lead to a successful outcome. Over time, ezbot optimizes the experience for different types of users.
 
 <details>  
 <summary>**Example: Users Have Different Preferences Based On Weather**</summary>  
@@ -17,20 +17,22 @@ Think of it as a nudge. Some people will still buy beanies when it's hot out or 
 
 ## Serving What Works
 
-After a user has created a **project** and **variations** to try, ezbot can start working its magic. It starts off by serving **combinations** of **variations** to users that are not in the configurable **holdback** group, and watches what users do with each **combination**.
+Once you've created a **project** and **variations** to test, ezbot begins its work. It starts by serving **combinations** of **variations** to users who are not in the configurable holdback group, and it monitors their interactions.
 
-As more people use the website or app, ezbot spots patterns invisible to humans and learn which **combinations** work best for users with specific **attributes**. Later, when someone lands on your website, ezbot will serve them the **combination** of variations that will maximize your **reward strategy**.
+As more people use your website or app, ezbot detects patterns that are invisible to humans and learns which **combinations** work best for users with specific **attributes**. When a new user lands on your website, ezbot serves them the **combination** of **variations** that will maximize your **reward strategy.**
 
 ![how it works](../img/how_ezbot_works.png)
 
-## Keeping Up With Changing Preferences
+## Adaptability
 
-Your website will not only serve different **variations** to users with different **attributes**, but will also be able to serve different **variations** at different times. Your users may prefer different messaging, layouts, or colors at different times of day or during different seasons.
+ezbot helps your business keep up with changing user preferences.
 
-Or, perhaps you run an ad campaign and attract users with different preferences than your usual audience.
+Your website will not only serve different **variations** to users with different **attributes**, but will also adapt to serve different **variations** at different times. User preferences may change based on the time of day, season, or other factors.
 
-ezbot automatically notices these preference changes, adjusts our model, and serves the optimal **combinations** over time.
+For instance, if you run an ad campaign that attracts users with different preferences than your usual audience, ezbot will automatically notice these changes, adjust its model, and serve the optimal combinations accordingly.
 
-## Always Learning
+## Continuous Learning
 
-ezbot uses a proprietary exploration policy to continuously test all of your **variations** over time, even if a given **variation** is under-performing, though under-performing **combinations** will be shown less frequently. This allows ezbot to ramp up traffic to **variations** that perform well later or under certain conditions.
+ezbot employs a proprietary exploration policy to continuously test all of your **variations**, even if some are under-performing. Although under-performing **combinations** will be shown less frequently, this approach allows ezbot to identify variations that may perform well under certain conditions or at a later time.
+
+By continuously learning and adapting, ezbot ensures that your website or app always delivers the best possible experience for your users.

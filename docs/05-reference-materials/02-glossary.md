@@ -14,14 +14,14 @@ sidebar_position: 2
 <details>  
 <summary>**Variation**</summary>  
 <div>  
-<div>Each variable can have different values you want to test. Imagine these as possibilities or choices. A **variation** an option for a change made on one variable. For example, if your variable is "button color," you might have variations like red, blue, and green. The more variations you explore, the more freedom Ezbot has to explore.</div>  
+<div>Each variable can have different values you want to test. Imagine these as possibilities or choices. A **variation** an option for a change made on one variable. For example, if your variable is "button color," you might have variations like red, blue, and green. The more variations you explore, the more freedom ezbot has to explore.</div>  
 </div>
 </details>
 
 <details>  
 <summary>**Attribute**</summary>  
 <div>  
-<div>These are like extra clues about your users that help Ezbot personalize their experiences. This can be as simple as telling us “this user is a paying customer” or “this user isn’t logged in”. You can also share things like known audience(s) they belong to, purchase history, or whether they’re in a beta group. </div>  
+<div>These are like extra clues about your users that help ezbot personalize their experiences. This can be as simple as telling us “this user is a paying customer” or “this user isn’t logged in”. You can also share things like known audience(s) they belong to, purchase history, or whether they’re in a beta group. </div>  
 <br/>  
 <details>  
 <summary>  
@@ -75,7 +75,7 @@ sidebar_position: 2
 <details>  
 <summary>**Prediction**</summary>  
 <div>  
-<p>Ezbot personalizes your UX like a master chef crafting the perfect dish. By subtly changing elements like button colors, text, or layouts (think: ingredients!), Ezbot tests different combinations ("recipes") to see what resonates with each user. When you initialize our code, it creates a unique session ID and requests a personalized "recipe" or set of variable predictions for each visitor. Simply integrate these suggestions into your code to deliver an optimized & personalized experience for everyone who visits your site. Predictions are automatically consumed if using our Visual Editor and `makeVisualChanges()`</p>
+<p>ezbot personalizes your UX like a master chef crafting the perfect dish. By subtly changing elements like button colors, text, or layouts (think: ingredients!), ezbot tests different combinations ("recipes") to see what resonates with each user. When you initialize our code, it creates a unique session ID and requests a personalized "recipe" or set of variable predictions for each visitor. Simply integrate these suggestions into your code to deliver an optimized & personalized experience for everyone who visits your site. Predictions are automatically consumed if using our Visual Editor and `makeVisualChanges()`</p>
 </div>
 </details>
 
