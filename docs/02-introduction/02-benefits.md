@@ -5,20 +5,20 @@ sidebar_label: Benefits
 
 # Benefits of Optimizing with ezbot
 
-ezbot simplifies the process of experimentation, cutting down the time and resources you need to run experiments. With ezbot, you can conduct more tests, gain deeper insights into your users, and optimize your website or app faster than ever before.
+ezbot simplifies and reduces the risks of experimentation, saving you time and resources. With ezbot, you can run more tests, gain deeper insights into your users, and optimize your website or app faster than ever.
 
 ## Get Started Quickly and Easily
 
-ezbot works seamlessly with any website, app, or framework, so you can get started in no time. Signing up and installing ezbot is a breeze, and every subscription comes with a one-month free trial, allowing you to try out ezbot risk-free. Just [sign up here](https://app.ezbot.ai/sign-up) and start optimizing!
+ezbot integrates seamlessly with any website, app, or framework, allowing you to start optimizing in no time. Signing up and installing ezbot is simple, and every subscription includes a one-month free trial, so you can try it risk-free. Just [sign up here](https://app.ezbot.ai/sign-up) and start optimizing!
 
 ### Two Ways to Use ezbot
 
 You can use ezbot in two ways:
 
-- **Visual Editor**: Perfect for non-technical users, this tool allows you to create and run experiments on your website without writing a single line of code.
-- **In-code**: Developers can leverage our JS Browser SDK or REST API to integrate ezbot’s powerful optimization engine directly into their stack.
+- **Visual Editor**: Ideal for non-technical users, the ezbot Visual Editor allows you to create and run experiments on your website without any coding.
+- **In-code**: Developers can use our JS Browser SDK or REST API to integrate ezbot’s powerful optimization engine directly into their stack.
 
-**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test, rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started)
+**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started)
 
 ## No More Guessing
 
@@ -26,14 +26,14 @@ You can use ezbot in two ways:
 
 Traditional experimentation tools often limit the number of experiments you can run due to the high cost in terms of traffic and resources. You have to guess which variations might perform best and prioritize those with the limited "traffic budget."
 
-**With ezbot, it's as easy and safe as possible to test all your ideas.** Because ezbot tests continuously, you no longer need to limit your creativity or try to prioritize your experiments blindly before running them. ezbot lets you try everything and find out what truly works best for your users.
+**With ezbot, it's easy and safe to test all your ideas.** Because ezbot tests continuously, you no longer need to limit your creativity or prioritize your experiments blindly. ezbot lets you try everything and find out what truly works best for your users.
 
 ## One Size Does Not Fit All
 
-Most experimentation tools aim to identify a single best-performing version of your website for all users. But ezbot recognizes that not everyone has the same preferences. For example, different users might prefer different clothing types based on the weather in their location. **With ezbot, your website can differentiate between user types and serve tailored experiences based on their preferences.**
+Most experimentation tools aim to identify a single best-performing version of your website for all users. However, ezbot recognizes that user preferences vary. For example, different users might prefer different clothing types based on the weather in their location. **With ezbot, your website can differentiate between user types and provide tailored experiences based on their preferences.**
 
 ## User Preferences Change
 
-Traditional experiments have a set start and end date, meaning once they’re over, no more data is collected. If user preferences change, you might not notice unless you run new experiments.
+Traditional experiments have a set start and end date, so once they’re over, no more data is collected. If user preferences change, you might not notice unless you run new experiments.
 
 **ezbot continuously tracks what works for users on your website, adapting quickly to changing preferences.** If an item goes out of style or the weather changes, ezbot will notice and adjust to find the best-performing variation for the new conditions.

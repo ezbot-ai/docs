@@ -4,21 +4,19 @@ sidebar_position: 4
 
 # Project Setup
 
-## Create a project
+## Create a Project
 
-After [you've signed-up, created an organization, and started a subscription](./02-sign-up.md), you're next step is to create a project.
+After [signing up, creating an organization, and starting a subscription](./02-sign-up.md), your next step is to create a project.
 
-Each **organization** can have multiple **projects**. **Projects** contain variables, variations, attributes, and settings like **holdback percentage**.Projects are an organizational tool to keep your data within a certain scope – apart from other data. For best results with ezbot, use as few projects as possible.
+Each **organization** can have multiple **projects**. **Projects** contain **variables**, **variations**, **attributes**, and **settings** like the **holdback percentage**. Projects help organize your data within a specific scope, separate from other data. For best results with ezbot, use as few projects as possible.
 
-To create a new project, you must set the following:
+## Holdback Percentage
 
-## Choose your holdback percentage
+The holdback percentage is the portion of traffic that receives only default values. ezbot uses this holdback traffic to compare the performance of your variations against the default values. The ideal holdback percentage depends on your organization's goals. Consider the following when determining a holdback percentage:
 
-The holdback percentage is the percentage of traffic that should receive only default values. ezbot uses your holdback traffic to compare the performance of your variations to the default values. The holdback percentage will vary depending on your organizations goals. The following are useful to consider when determining a holdback percentage:
-
-- Risk Aversion
-- Number of Variations tested
-- Amount of Traffic not in Holdback
+- **Risk Aversion:** A higher holdback percentage means less traffic is exposed to variations, reducing the risk of negative outcomes.
+- **Number of Variations Tested:** The more variations you test, the more traffic you need to test them. A lower holdback percentage may be necessary to ensure each variation receives enough traffic.
+- **Amount of Traffic Not in Holdback:** The more traffic you have, the more you can afford to hold back. If you have a lot of traffic, you can afford to hold back more.
 
 :::tip
 

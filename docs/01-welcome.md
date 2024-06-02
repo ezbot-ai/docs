@@ -4,9 +4,25 @@ sidebar_position: 1
 
 # Welcome
 
-Welcome to ezbot Docs! This is the place to learn how to use ezbot to optimize your website or app.
+Welcome to ezbot Docs! Here, you'll learn how to use ezbot to optimize your website or app.
 
-Optimization is the process of improving your website or app to increase the likelihood that visitors will take a desired action. This could be anything from making a purchase to signing up for a newsletter.
+## What is ezbot?
+
+ezbot is an Optimization-as-a-Service tool designed to simplify the process of enhancing user experiences on websites and applications. It’s user-friendly and cost-effective, requiring less human involvement and expertise compared to other tools. With ezbot, you can test various elements of your website, such as text, colors, images, pricing, feature configuration, and layouts – without needing knowledge in experimental design, programming, or statistics.
+
+## Our Mission
+
+We aim to empower everyone to test their ideas and eliminate poor user experiences on all websites and apps. ezbot was founded on the belief that when people are freed from the technical complexities of experimentation, they can focus on creating intuitive and effective user experiences that improve business outcomes.
+
+## Why ezbot?
+
+We created ezbot to unleash human creativity by reducing the barriers in data-driven decision-making. Our goal is to make it easy for every company to provide their users with the best experience possible. With cutting edge AI, we help digital businesses eradicate bad user experiences everywhere.
+
+## Understanding Optimization
+
+[Optimization](/introduction/why-optimize) involves improving your website or app over time to increase the chances that visitors will take a desired action, such as making a purchase or signing up for a newsletter.
+
+Explore our documentation to discover how ezbot can transform your website or app’s user experience.
 
 ## Docs Structure
 

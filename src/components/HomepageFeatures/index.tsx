@@ -10,20 +10,20 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Instrument App(s)',
+    title: 'Install ezbot',
     Svg: require('@site/static/img/gears-solid.svg').default,
     description: (
       <>
-        Share customer attributes for automatic audience segmentation and use ezbot Variables to create new digital experiences.
+        Simply copy/paste our code snippet on your website or use our JS SDK and you're ready to go
       </>
     ),
   },
   {
-    title: 'Learn from Customer Behavior',
+    title: 'Create Variations',
     Svg: require('@site/static/img/users-solid.svg').default,
     description: (
       <>
-        Our powerful AI continuously learns which experiences work best for each kind of customer
+        Use our no-code Visual Editor or use our predictions in your code to test alternative images, text, colors, layouts, and more.
       </>
     ),
   },
