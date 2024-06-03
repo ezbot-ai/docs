@@ -23,12 +23,12 @@ At ezbot, we believe:
 3. User preferences are diverse, so a one-size-fits-all approach won't cut it.
 4. All websites and apps can be improved.
 5. The only way to know what works is to put it to the test.
-6. Testing new ideas should be simple and risk-free.
+6. Testing new ideas should be simple and low risk.
 7. Everyone should have the power to test their ideas.
 
 ## The "just try it" mentality
 
-Here at ezbot, we encourage a "just try it" mentality. We believe that the best _and only_ way to know if something works is to test it. Instead of debating endlessly about what might work, we encourage you to test your ideas to the test early and often to see what works best for your users.
+Here at ezbot, we encourage a "just try it" mentality. We believe that the best _and only_ way to know if something works is to test it. Instead of debating endlessly about what might work, we encourage you to test your ideas early and often to see what works best for your users.
 
 **Our product supports the "just try it" mentality by:**
 
