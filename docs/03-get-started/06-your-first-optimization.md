@@ -90,3 +90,9 @@ And for ezbot users comfortable with HTML, CSS, and JavaScript, the following ch
 - **Set Attribute**: Change the HTML attribute of an element.
 
 If you'd like to see another visual change supported, please reach out to [support@ezbot.ai](mailto:support@ezbot.ai).
+
+:::info
+
+Check out our [Visual Editor Guide](/guides/visual/capabilities) for more information, including upcoming functionality.
+
+:::
