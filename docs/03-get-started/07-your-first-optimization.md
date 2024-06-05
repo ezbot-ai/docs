@@ -25,7 +25,7 @@ To create a basic variable, follow these steps:
 
 1. **Human Readable Name**: Choose a name that is easy to understand.
 2. **Variable Key**: This is the name you'll use in your code. It should be all lowercase and contain no spaces.
-3. **Add Allowed Values**: Add the values you want to test. For example, if testing button colors, you could add "red," "blue," and "green" as allowed values. All allowed values should be strings.
+3. **Add Allowed Values**: Add the values you want to test. For example, if testing button colors, you could add "red," "blue," and "green" as allowed values.
 4. **Default Value**: Select the default value for your variable. This value will be used for users in the holdback group and will be explored for users in the optimized group. The default variable is indicated by a checkmark.
 
 ### Visual Variable

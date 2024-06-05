@@ -3,7 +3,7 @@ sidebar_position: 5
 tags: [rewards]
 ---
 
-# Installation
+# Web Tracker Installation
 
 ## via JavaScript Snippet
 
@@ -35,7 +35,7 @@ If you need help installing the JavaScript Snippet, please contact us at [suppor
 </div>  
 </details>
 
-### Basic Script Tag Installation
+### Basic JS Snippet Installation
 
 Install the following in the `<head>` tag of your website
 
@@ -62,19 +62,19 @@ Then:
 </script>
 ```
 
-When your DOM is loaded, the ezbot library will be loaded and initialized.
+When the page is loaded, the ezbot library will be loaded and initialized.
 
 #### Configuration Options
 
-- **startActivityTracking**: Optional. This function tracks how long users are on your site. It takes an object with two properties:
-  - **minimumVisitLength**: The minimum time in seconds that must have elapsed before the first heartbeat.
+- **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
+  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
   - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
-- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For SPAs, call this after a routing change. Soon, you'll be able to use these events to track how users move through your site and as rewards.
-- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events to tune the model and improve the quality of the recommendations. It takes an object with three properties:
+- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change. You can now use these events as rewards in ezbot. Learn more about rewards in the [next section](/get-started/rewards).
+- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events that ezbot can use to improve the quality of our recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
-- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For SPAs, call this after a routing change.
+- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
 
 Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
 
@@ -93,7 +93,7 @@ If you're a developer and you want to integrate ezbot directly into your website
 </ul>
 <p>**Cons**</p>   
 <ul>
-    <li>Requires a developer to add **variations**</li>
+    <li>Requires a developer (or someone who can code) to add and use **variations** in your website or app's language.</li>
     <li>Does not support Node (server-side) yet.</li>
 </ul>
 </div>  
@@ -125,15 +125,15 @@ makeVisualChanges();
 
 #### Configuration Options
 
-- **startActivityTracking**: Optional. This function tracks how long users are on your site. It takes an object with two properties:
-  - **minimumVisitLength**: The minimum time in seconds that must have elapsed before the first heartbeat.
+- **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
+  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
   - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
-- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For SPAs, call this after a routing change. Soon, you'll be able to use these events to track how users move through your site and as rewards.
-- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events to tune the model and improve the quality of the recommendations. It takes an object with three properties:
+- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change. You can now use these events as rewards in ezbot. Learn more about rewards in the [next section](/get-started/rewards).
+- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events that ezbot can use to improve the quality of our recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
-- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For SPAs, call this after a routing change.
+- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
 
 Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
 
