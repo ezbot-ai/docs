@@ -37,6 +37,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
+          onInlineTags: "throw",
           editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
         },
         blog: false,

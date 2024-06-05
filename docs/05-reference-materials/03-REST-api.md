@@ -63,7 +63,7 @@ GET https://api.ezbot.ai/predict?projectId={{projectId}}&sessionId={{sessionID}}
 
 This endpoint allows you to send a reward event to ezbot. Reward events are signals that help ezbot understand how each combination of variations is performing. You can learn more about [how to pick the best reward for your use case here](../get-started/strategize) and [how to setup rewards here.](../get-started/project-setup)
 
-ezbot wraps an open source tracking library called Snowplow. You can send a reward event to ezbot by sending a POST request to our Snowplow collector endpoint.
+ezbot wraps an open source tracking library called Snowplow. The easiest way to send a reward event to ezbot is via our SDK's `.trackRewardEvent()` function, and you may also send rewards to ezbot via our REST API. You can send a reward event to ezbot by sending a POST request to our Snowplow collector endpoint.
 
 ### Request
 

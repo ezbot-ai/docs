@@ -6,13 +6,14 @@ sidebar_position: 0
 
 At ezbot, our mission is to empower everyone to test their ideas and eliminate poor user experiences on all websites and apps. Digital businesses use ezbot to experiment with new concepts, understand what works, and deliver exceptional user experiences to their customers.
 
-## Three Key Insights Behind ezbot
+## Two Key Insights Behind ezbot
 
-ezbot was founded because of three key insights:
+ezbot was founded because of two key insights:
 
-1. Experimentation is essential for making data-driven decisions, but it is often too challenging, time-consuming, and expensive for most companies.
-2. People are generally poor at predicting which user experience will perform best. (Try [Guessing The Test](https://guessthetest.com/archived-tests/) yourself!).
-3. The number of variations tested is the best predictor of return on investment (ROI) in experimentation programs, but the more concurrent variations you test, the more complex it becomes. You can learn more about the value of experimentation [here](https://www.optimizely.com/the-evolution-of-experimentation/).
+1. Experimentation is essential for making data-driven decisions, but it is often too challenging, time-consuming, and expensive.
+2. The more ideas you test the higher your chance of success, but the more complex it becomes to manage.
+
+You can learn more about the value of experimentation [here](https://www.optimizely.com/the-evolution-of-experimentation/).
 
 ## Core Beliefs
 
@@ -30,10 +31,10 @@ At ezbot, we believe:
 
 Here at ezbot, we encourage a "just try it" mentality. We believe that the best _and only_ way to know if something works is to test it. Instead of debating endlessly about what might work, we encourage you to test your ideas early and often to see what works best for your users.
 
-**Our product supports the "just try it" mentality by:**
+**Our product supports this mentality by:**
 
-1. Making it easy to test new ideas.
-2. Reducing the risk of testing bold ideas by continuously monitoring and adjusting.
-3. Testing numerous combinations of your ideas to identify the most effective one.
+1. **Automating Experimentation:** Making it incredibly easy to test new ideas with minimal effort.
+2. **Mitigating Risk:** Continuously monitoring and adjusting to reduce the risks associated with test new ideas.
+3. **Optimizing Holistically:** Testing numerous combinations of your ideas to identify the most effective overall user experience for each kind of user.
 
 You never know what will work until you try it, so why not give it a shot with ezbot?
