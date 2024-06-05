@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+tags: [rewards]
 ---
 
 # Installation
@@ -69,11 +70,13 @@ When your DOM is loaded, the ezbot library will be loaded and initialized.
   - **minimumVisitLength**: The minimum time in seconds that must have elapsed before the first heartbeat.
   - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
 - **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For SPAs, call this after a routing change. Soon, you'll be able to use these events to track how users move through your site and as rewards.
-- **trackRewardEvent**: Required. Sends a reward event to ezbot to tune the model and improve the quality of the recommendations. It takes an object with three properties:
+- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events to tune the model and improve the quality of the recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
 - **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For SPAs, call this after a routing change.
+
+Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
 
 ## via JavaScript SDK
 
@@ -105,8 +108,8 @@ npm install @ezbot-ai/javascript-sdk
 Use the following code to initialize ezbot and start tracking your users. Placement varies by your framework. Generally, you want it loaded on every page.
 
 ```js
-import { initEzbot } from "@ezbot-ai/javascript-sdk";
-await ezbot.initEzbot({{your_project_id}});
+import { initEzbot, startActivityTracking, trackPageView, trackRewardEvent, makeVisualChanges  } from "@ezbot-ai/javascript-sdk";
+await initEzbot({{your_project_id}});
 startActivityTracking({
   minimumVisitLength: 2,
   heartbeatDelay: 2,
@@ -126,11 +129,13 @@ makeVisualChanges();
   - **minimumVisitLength**: The minimum time in seconds that must have elapsed before the first heartbeat.
   - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
 - **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For SPAs, call this after a routing change. Soon, you'll be able to use these events to track how users move through your site and as rewards.
-- **trackRewardEvent**: Required. Sends a reward event to ezbot to tune the model and improve the quality of the recommendations. It takes an object with three properties:
+- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events to tune the model and improve the quality of the recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
 - **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For SPAs, call this after a routing change.
+
+Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
 
 ## Other Installation Options
 
