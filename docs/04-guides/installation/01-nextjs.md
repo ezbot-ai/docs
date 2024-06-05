@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: Next.js
+tags: [rewards]
 ---
 
 # Next.js
@@ -26,7 +27,7 @@ Make sure to initialize ezbot on every page for tracking purposes. You can do th
 ```js
 "use strict"
 "use client"
-import { initEzbot } from "@ezbot-ai/javascript-sdk";
+import { initEzbot, startActivityTracking, trackPageView, trackRewardEvent, makeVisualChanges } from "@ezbot-ai/javascript-sdk";
 import { useEffect, useRef } from "react";
 // ... other imports
 
@@ -149,7 +150,7 @@ export default function ComponentName({
   - **minimumVisitLength**: The minimum time in seconds that must have elapsed before the first heartbeat.
   - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
 - **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For SPAs, call this after a routing change. Soon, you'll be able to use these events to track how users move through your site and as rewards.
-- **trackRewardEvent**: Required. Sends a reward event to ezbot to tune the model and improve the quality of the recommendations. It takes an object with three properties:
+- **trackRewardEvent** Optional. Sends a reward event to ezbot to tune the model and improve the quality of the recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.

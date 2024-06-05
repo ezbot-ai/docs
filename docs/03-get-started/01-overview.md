@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: [rewards]
 ---
 
 # Overview
@@ -13,7 +14,7 @@ To begin using ezbot, follow these steps:
 3. **Choose an ezbot Subscription:** Select a subscription plan that suits your business needs. All plans come with a one-month free trial.
 4. **Create an ezbot Project:** Once you have a subscription, create your first project within your organization. Each project has its own data and settings, including the holdback percentage, and ezbot will create a model for each project.
 5. **Install ezbot:** Use the project ID to install ezbot on your website or app. You must install either the JavaScript Snippet or the Browser SDK. This will enable ezbot to start collecting data and running experiments. Additionally, it allows you to use our Visual Editor to create and manage experiments.
-6. **Set Up a Reward Signal:** ezbot uses reward signals to score user sessions and optimize for your desired business outcomes. To function properly, you must send at least one reward signal to ezbot as part of your installation. The easiest way to do so is via the SDK's .`trackRewardEvent()` function. Optionally, you can send reward signals from backend services via our REST [REST API](/reference-materials/REST-api).
+6. **Set Up a Reward Signal:** ezbot uses reward signals to score user sessions and optimize for your desired business outcomes. Anything can be a reward. For instance, a user getting a page, clicking a link, or checking out. To function properly, you must send at least one reward signal to ezbot as part of your installation.
 
 With these steps completed, you'll be ready to start optimizing your website or app with ezbot.
 
