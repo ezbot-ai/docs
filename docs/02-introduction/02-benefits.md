@@ -16,7 +16,7 @@ ezbot integrates seamlessly with any website, app, or framework, allowing you to
 You can use ezbot in two ways:
 
 - **Visual Editor**: Ideal for non-technical users, the ezbot Visual Editor allows you to create and run experiments on your website without any coding.
-- **In-code**: Developers can use our JS Browser SDK or [REST API](/reference-materials/REST-api) to integrate ezbot’s powerful optimization engine directly into their stack.
+- **In-code**: Developers can use our JS Browser SDK to integrate ezbot’s powerful optimization engine directly into their stack.
 
 **Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started)
 

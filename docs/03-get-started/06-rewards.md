@@ -99,7 +99,7 @@ When the page is loaded, the ezbot library will be loaded and initialized and th
 
 ### Via REST API
 
-See our [REST API Guide](/reference-materials/REST-api) for more information on sending reward signals via the REST API.
+If you'd like to send us rewards from a backend service, please contact us at [support@ezbot.ai](mailto:support@ezbot.ai).
 
 ## Scoring
 

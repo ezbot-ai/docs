@@ -49,7 +49,7 @@ For now, we recommend choosing one primary goal to optimize for. If you have mul
 You can use ezbot in two ways:
 
 - **Visual Editor:** Ideal for non-technical users, this tool allows you to create and run experiments on your website without writing any code.
-- **In-code:** Developers can use our JavaScript Browser SDK or [REST API](/reference-materials/REST-api) to integrate ezbot’s powerful optimization engine directly into their stack.
+- **In-code:** Developers can use our JavaScript Browser SDK to integrate ezbot’s powerful optimization engine directly into their stack.
 
 :::tip
 
