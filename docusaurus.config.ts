@@ -87,11 +87,33 @@ const config: Config = {
           label: "Docs",
         },
         // { to: "/blog", label: "Blog", position: "left" },
+        // {
+        //   href: "https://ezbot.ai/pricing.html",
+        //   position: "right",
+        //   html: "<span class='navbar__item navbar__link badge badge--info'>Pricing</span>",
+        //   class: "navbar-button",
+        // },
+        // {
+        //   href: "https://app.ezbot.ai/sign-up",
+        //   position: "right",
+        //   html: "<span class='navbar__item navbar__link badge badge--primary'>Free Trial</span>",
+        //   class: "navbar-button",
+        // },
         {
-          href: "https://github.com/ezbot-ai/docs",
-          label: "GitHub",
+          href: "https://ezbot.ai/pricing.html",
           position: "right",
+          label: "Pricing",
         },
+        {
+          href: "https://app.ezbot.ai/sign-up",
+          position: "right",
+          label: "Free Trial",
+        },
+        // {
+        //   href: "https://github.com/ezbot-ai/docs",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
         // {
         //   type: "docsVersionDropdown", // Turn me on if we have multiple versions
         // },
