@@ -5,13 +5,20 @@ tags: [rewards]
 
 # Web Tracker Installation
 
+To get started with ezbot, you need to install the ezbot library on your website. The ezbot library is a small piece of code that you add to your website. It will automatically load the ezbot library and start tracking your users.
+
+A complete installation requires two steps:
+
+- Tracking code must be loaded on _every_ page of your website.
+- You may optionally add a call to `trackRewardEvent` to optimize for a specific user action, or use [Page View Events as rewards in ezbot](/get-started/rewards#page-view-events).
+
 ## via JavaScript Snippet
 
 The easiest way to install ezbot is to use our JavaScript Snippet. The JavaScript Snippet is a small piece of code that you add to your website. It will automatically load the ezbot library and start tracking your users.
 
 If you're using a website builder like Wix, Squarespace, or WebFlow and you don't have access or the desire to modify your source code, the JavaScript Snippet is the best way to get started.
 
-To use the JavaScript Snippet, simply copy/paste the following code into the `<head>` tag of your website's HTML and change the values in `{{mustache syntax}}` to the values corresponding to your project.
+To use the JavaScript Snippet, simply copy/paste the following code into the `<head>` tag of your website's HTML and change the commented values to the values corresponding to your project.
 
 If you need help installing the JavaScript Snippet, please contact us at [support@ezbot.ai](mailto:support@ezbot.ai).
 
@@ -41,28 +48,41 @@ Install the following in the `<head>` tag of your website
 
 ```html
 <script src="https://cdn.ezbot.ai/web-snippets/ezbot.min.js"></script>
-```
-
-Then:
-
-```html
-<script>
-  await ezbot.initEzbot({{your_project_id}});
+<script async>
+  await ezbot.initEzbot(0); // Replace 0 with your project ID
   ezbot.startActivityTracking({
       minimumVisitLength: 2,
       heartbeatDelay: 2,
   });
   ezbot.trackPageView();
-  ezbot.trackRewardEvent({
-      key: {{name_of_your_reward}},
-      reward: 1,
-      rewardUnits: "count",
-  });
   ezbot.makeVisualChanges();
 </script>
 ```
 
 When the page is loaded, the ezbot library will be loaded and initialized.
+
+:::important
+
+Make sure the code above is loaded on **every** page of your website. This is important for tracking user activity and applying visual changes. You may want to put it in a `layout`, depending on your framework.
+
+:::
+
+Then, on any page where you want to track a reward event (a conversion), add the following code:
+
+```html
+<script async>
+  if (condition) {
+    // Replace with your condition
+    ezbot.trackRewardEvent({
+      key: "some_reward_key", // Replace with the name of your reward
+      reward: 1,
+      rewardUnits: "count",
+    });
+  }
+</script>
+```
+
+See the [next section](/get-started/rewards) for more information and an example reward.
 
 #### Configuration Options
 
@@ -108,19 +128,33 @@ npm install @ezbot-ai/javascript-sdk
 Use the following code to initialize ezbot and start tracking your users. Placement varies by your framework. Generally, you want it loaded on every page.
 
 ```js
-import { initEzbot, startActivityTracking, trackPageView, trackRewardEvent, makeVisualChanges  } from "@ezbot-ai/javascript-sdk";
-await initEzbot({{your_project_id}});
+import {
+  initEzbot,
+  startActivityTracking,
+  trackPageView,
+  trackRewardEvent,
+  makeVisualChanges,
+} from "@ezbot-ai/javascript-sdk";
+await initEzbot(0); // Replace 0 with your project ID
 startActivityTracking({
   minimumVisitLength: 2,
   heartbeatDelay: 2,
 });
 trackPageView();
-trackRewardEvent({
-    key: {{name_of_your_reward}},
+makeVisualChanges();
+```
+
+Then, anywhere you want to track a reward event (a conversion), add the following code:
+
+```js
+if (condition) {
+  // Replace with your condition
+  trackRewardEvent({
+    key: "name_of_your_reward", // Replace with the name of your reward
     reward: 1,
     rewardUnits: "count",
-});
-makeVisualChanges();
+  });
+}
 ```
 
 #### Configuration Options

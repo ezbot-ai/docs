@@ -44,15 +44,15 @@ Here is an example of how to send a custom reward signal to ezbot when a button 
 #### Example: Reward on Button Click
 
 ```html
-<script>
-  await ezbot.initEzbot({{your_project_id}});
+<script async>
+  await ezbot.initEzbot(0); // Replace 0 with your project ID
   // Get the button element
   const button = document.getElementById('myButton');
 
   // Add a click event listener to the button
   button.addEventListener('click', function() {
       ezbot.trackRewardEvent({
-          key: {{name_of_your_reward}},
+          key: "name_of_your_reward", // Replace with the name of your reward
           reward: 1,
           rewardUnits: "count",
       });
@@ -76,16 +76,16 @@ The following is an example of how to send a custom reward signal when a button 
 
 ```js
 import { initEzbot, trackRewardEvent } from "@ezbot-ai/javascript-sdk";
-await initEzbot({{your_project_id}});
-const button = document.getElementById('myButton');
+await initEzbot(0); // Replace 0 with your project ID
+const button = document.getElementById("myButton");
 
 // Add a click event listener to the button
-button.addEventListener('click', function() {
-    trackRewardEvent({
-        key: {{name_of_your_reward}},
-        reward: 1,
-        rewardUnits: "count",
-    });
+button.addEventListener("click", function () {
+  trackRewardEvent({
+    key: "name_of_your_reward", // Replace with the name of your reward
+    reward: 1,
+    rewardUnits: "count",
+  });
 });
 ```
 
