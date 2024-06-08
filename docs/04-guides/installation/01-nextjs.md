@@ -38,17 +38,12 @@ export default function ComponentName({
     if (ezbotInit.current) {
       return;
     }
-    initEzbot({{your_project_id}});
+    initEzbot(0); // Replace 0 with your project ID
         startActivityTracking({
       minimumVisitLength: 2,
       heartbeatDelay: 2,
     });
     trackPageView();
-    trackRewardEvent({
-        key: {{name_of_your_reward}},
-        reward: 1,
-        rewardUnits: "count",
-    });
     makeVisualChanges();
     ezbotInit.current = true;
   }, []);
@@ -71,7 +66,7 @@ export default function ComponentName({
 
   function handleClick() {
     trackRewardEvent({
-        key: {{name_of_your_reward}},
+        key: "name_of_your_reward", // Replace with the name of your reward
         reward: 1,
         rewardUnits: "count",
     });
