@@ -25,21 +25,26 @@ In a top-level component such as a layout, initialize ezbot. This will ensure th
 Make sure to initialize ezbot on every page for tracking purposes. You can do this in a top-level component such as a layout.
 
 ```js
-"use strict"
-"use client"
-import { initEzbot, startActivityTracking, trackPageView, trackRewardEvent, makeVisualChanges } from "@ezbot-ai/javascript-sdk";
+"use strict";
+"use client";
+import {
+  initEzbot,
+  startActivityTracking,
+  trackPageView,
+  trackRewardEvent,
+  makeVisualChanges,
+} from "@ezbot-ai/javascript-sdk";
 import { useEffect, useRef } from "react";
 // ... other imports
 
-export default function ComponentName({
-
+export default function ComponentName() {
   const ezbotInit = useRef(false);
   useEffect(() => {
     if (ezbotInit.current) {
       return;
     }
     initEzbot(0); // Replace 0 with your project ID
-        startActivityTracking({
+    startActivityTracking({
       minimumVisitLength: 2,
       heartbeatDelay: 2,
     });
@@ -48,36 +53,27 @@ export default function ComponentName({
     ezbotInit.current = true;
   }, []);
 
-  return (
-    <div>
-      {/* your component */}
-    </div>
-  )
-})
+  return <div>{/* your component */}</div>;
+}
 ```
 
 ### Reward Tracking From a Component
 
 ```js
-"use client"
+"use client";
 import { trackRewardEvent } from "@ezbot-ai/javascript-sdk";
 
-export default function ComponentName({
-
+export default function ComponentName() {
   function handleClick() {
     trackRewardEvent({
-        key: "name_of_your_reward", // Replace with the name of your reward
-        reward: 1,
-        rewardUnits: "count",
+      key: "name_of_your_reward", // Replace with the name of your reward
+      reward: 1,
+      rewardUnits: "count",
     });
   }
 
-  return (
-    <button onClick={handleClick}>
-      Click me!
-    </button>
-  )
-})
+  return <button onClick={handleClick}>Click me!</button>;
+}
 ```
 
 ### Using Predictions
@@ -117,7 +113,7 @@ Below is just an example. After initializing ezbot, you can use the `window.ezbo
 import { trackRewardEvent } from "@ezbot-ai/javascript-sdk";
 import { useEffect, useState } from 'react';
 
-export default function ComponentName({
+export default function ComponentName() {
 
   const ctaText = useState("your fallback value");
 
@@ -136,7 +132,7 @@ export default function ComponentName({
       {{ctaText}}
     </button>
   )
-})
+}
 ```
 
 ### Configuration Options
