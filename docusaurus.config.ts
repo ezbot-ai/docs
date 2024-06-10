@@ -84,7 +84,7 @@ const config: Config = {
   ],
   themeConfig: {
     // Replace with your project's social card
-    image: "img/social-card.jpg",
+    // image: "img/social-card.jpg",
     metadata: [
       { name: "description", content: "Put your optimization on autopilot" },
       { name: "twitter:card", content: "summary_large_image" },
