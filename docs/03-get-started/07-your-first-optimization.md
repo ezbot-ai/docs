@@ -42,7 +42,7 @@ We recommend using the **Visual Editor** to create, edit, and delete visual vari
 
 The Visual Editor allows you to make changes to your website without writing any code. You can change text, styles, links, images, and more. To use the Visual Editor, you must first install the JavaScript Snippet or Node SDK and use `makeVisualChanges()` in your code.
 
-![Visual Editor](../img/visual_editor2.png)
+![Visual Editor](../img/visual_editor2-min.png)
 
 ### Using the Visual Editor
 

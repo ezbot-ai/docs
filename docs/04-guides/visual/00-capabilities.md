@@ -8,7 +8,7 @@ This guide will help you understand the capabilities of the ezbot Visual Editor.
 
 ## Using the Visual Editor
 
-![Visual Editor](../../img/visual_editor2.png)
+![Visual Editor](../../img/visual_editor2-min.png)
 
 ### Modes
 
@@ -82,7 +82,7 @@ In order to use the ezbot Visual Editor, your website's CSP must allow `*.ezbot.
 
 If your CSP does not allow `*.ezbot.ai` to load its resources from within an iframe, you will see the following:
 
-![CSP Error](../../img//visual_editor_csp_error.png)
+![CSP Error](../../img/visual_editor_csp_error.png)
 
 The Visual Editor requires the following CSP directives to be set in your website's CSP policy in your website's HTTP response headers.
 

@@ -13,6 +13,7 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
   deploymentBranch: "gh-pages",
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -51,6 +52,18 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
   themes: [
     // ... Your other themes.
     [
@@ -72,6 +85,38 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/social-card.jpg",
+    metadata: [
+      { name: "description", content: "Put your optimization on autopilot" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content: "https://docs.ezbot.ai/img/logo-for-twitter.jpg",
+      },
+      {
+        name: "twitter:domain",
+        content: "docs.ezbot.ai",
+      },
+      {
+        name: "twitter:url",
+        content: "https://docs.ezbot.ai",
+      },
+      {
+        name: "twitter:title",
+        content: "ezbot.ai Docs",
+      },
+      {
+        name: "twitter:description",
+        content: "Put your optimization on autopilot",
+      },
+      {
+        name: "og:image",
+        content: "https://docs.ezbot.ai/img/logo-for-open-graph.jpg",
+      },
+      {
+        name: "keywords",
+        content: "ezbot, ai, optimization, personalization, experimentation",
+      },
+    ],
     navbar: {
       // title: "ezbot.ai",
       logo: {

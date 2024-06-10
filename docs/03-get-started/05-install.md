@@ -173,4 +173,4 @@ Learn about other options for sending reward signals to ezbot in the [next secti
 
 ## Other Installation Options
 
-- [React / Next.js](../guides/installation/nextjs)
+- [React / Next.js](/guides/installation/nextjs)
