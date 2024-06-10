@@ -93,11 +93,11 @@ const config: Config = {
         content: "https://docs.ezbot.ai/img/logo-for-twitter.jpg",
       },
       {
-        name: "twitter:domain",
+        property: "twitter:domain",
         content: "docs.ezbot.ai",
       },
       {
-        name: "twitter:url",
+        property: "twitter:url",
         content: "https://docs.ezbot.ai",
       },
       {
@@ -109,7 +109,7 @@ const config: Config = {
         content: "Put your optimization on autopilot",
       },
       {
-        name: "og:image",
+        property: "og:image",
         content: "https://docs.ezbot.ai/img/logo-for-open-graph.jpg",
       },
       {
