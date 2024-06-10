@@ -53,6 +53,6 @@ You can use ezbot in two ways:
 
 :::tip
 
-**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started)
+**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started/)
 
 :::

@@ -41,7 +41,7 @@ sidebar_position: 2
 <details>  
 <summary>**Reward**</summary>  
 <div>  
-<div>A reward is like sending us a thumbs-up to a user experience. Whenever your users take an action you want them to (like buying something or adding an item to their cart), we need a signal to understand how each combination of variations is performing. You can learn more about [how to pick the best reward for your use case here](../get-started/strategize) and [how to setup rewards here.](../get-started/project-setup)</div>  
+<div>A reward is like sending us a thumbs-up to a user experience. Whenever your users take an action you want them to (like buying something or adding an item to their cart), we need a signal to understand how each combination of variations is performing. You can learn more about [how to pick the best reward for your use case here](/get-started/strategize) and [how to setup rewards here.](/get-started/project-setup)</div>  
 <br/>  
 <details>  
 <summary>  
@@ -84,7 +84,7 @@ sidebar_position: 2
 <div>  
 <div>This is like a control group in a science experiment. We compare how users in the optimized group performs compared to the holdback group. The optimized group shows both the default variations and the variations you are testing. The holdback groups only shows the default variations. </div>
 <br/>  
-<div>Having a holdback group helps us measure the relative impact of your experimentation efforts. You control how much traffic goes to the holdback group (e.g., 20%) either to balance risk or maximize your potential ROI from ezbot. See more about how to decide on your holdback percentage in [here.](../get-started/project-setup) </div>  
+<div>Having a holdback group helps us measure the relative impact of your experimentation efforts. You control how much traffic goes to the holdback group (e.g., 20%) either to balance risk or maximize your potential ROI from ezbot. See more about how to decide on your holdback percentage in [here.](/get-started/project-setup) </div>  
 </div>
 </details>
 

@@ -30,7 +30,7 @@ Our docs are organized into the following sections:
 
 - [Introduction](/category/introduction): Learn why businesses experiment on websites and how ezbot can help you optimize your website or app.
 - [Get Started](/category/get-started): Learn how to install and use ezbot on your website or app in just 10 minutes.
-- [Guides](/category/guides): Explore how to use ezbot in common use cases.
-- [Reference Materials](category/reference-materials): Take a deeper dive into the concepts and features of ezbot.
+- [Guides](/category/guides/): Explore how to use ezbot in common use cases.
+- [Reference Materials](/category/reference-materials): Take a deeper dive into the concepts and features of ezbot.
 
 If you're new to this kind of thing, we recommend starting with the [Introduction](/introduction/mission) section.

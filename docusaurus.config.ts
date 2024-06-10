@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "ezbot.ai Docs",
+  title: "ezbot.ai Documentation",
   tagline: "Put your optimization on autopilot",
   favicon: "img/favicon.ico",
 
@@ -13,6 +13,7 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
   deploymentBranch: "gh-pages",
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -49,6 +50,18 @@ const config: Config = {
           anonymizeIP: true,
         },
       } satisfies Preset.Options,
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
     ],
   ],
   themes: [
