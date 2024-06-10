@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Optimize with AI`}
-      description="ezbot.ai documentation home">
+      description="ezbot.ai Documentation">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

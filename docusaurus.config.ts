@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "ezbot.ai Documentation",
+  title: "ezbot.ai Docs",
   tagline: "Put your optimization on autopilot",
   favicon: "img/favicon.ico",
 
@@ -85,6 +85,38 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/social-card.jpg",
+    metadata: [
+      { name: "description", content: "Put your optimization on autopilot" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content: "https://docs.ezbot.ai/img/logo-for-twitter.jpg",
+      },
+      {
+        name: "twitter:domain",
+        content: "docs.ezbot.ai",
+      },
+      {
+        name: "twitter:url",
+        content: "https://docs.ezbot.ai",
+      },
+      {
+        name: "twitter:title",
+        content: "ezbot.ai Docs",
+      },
+      {
+        name: "twitter:description",
+        content: "Put your optimization on autopilot",
+      },
+      {
+        name: "og:image",
+        content: "https://docs.ezbot.ai/img/logo-for-open-graph.jpg",
+      },
+      {
+        name: "keywords",
+        content: "ezbot, ai, optimization, personalization, experimentation",
+      },
+    ],
     navbar: {
       // title: "ezbot.ai",
       logo: {
