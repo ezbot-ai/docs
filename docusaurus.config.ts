@@ -41,7 +41,15 @@ const config: Config = {
           onInlineTags: "throw",
           editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
         },
-        blog: false,
+        blog: {
+          path: "blog",
+          editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
+          blogTitle: "ezbot Blog",
+          blogDescription: "The latest news and updates from ezbot",
+          blogSidebarTitle: "Recent Posts",
+          routeBasePath: "/blog",
+          blogSidebarCount: "ALL",
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -77,7 +85,11 @@ const config: Config = {
         // language: ["en", "zh"],
         // ```
         docsRouteBasePath: "/",
-        indexBlog: false, // Turn when when we have a blog
+        blogRouteBasePath: "/blog",
+        indexBlog: true,
+        indexDocs: true,
+        docsDir: "docs",
+        blogDir: "blog",
       },
     ],
   ],
@@ -130,7 +142,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        // { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Blog", position: "left" },
         // {
         //   href: "https://ezbot.ai/pricing.html",
         //   position: "right",
