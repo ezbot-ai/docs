@@ -12,6 +12,8 @@ authors: [griffin]
 
 In today’s competitive digital landscape, optimizing your website to provide the best user experience is crucial. Traditional A/B testing, though effective, is often cumbersome, time-consuming, and expensive. This is where ezbot.ai steps in. By automating the A/B testing process with cutting-edge AI, ezbot.ai empowers businesses to experiment with new ideas effortlessly and efficiently, leading to superior user experiences and increased conversion rates.
 
+<!-- truncate -->
+
 ### Our Mission: Empowering Innovation and Enhancing User Experiences
 
 At ezbot.ai, our mission is simple yet profound: to empower everyone to test their ideas and eliminate poor user experiences everywhere. Digital businesses leverage ezbot.ai to experiment with new concepts, understand what works, and ultimately deliver exceptional user experiences to their customers.
