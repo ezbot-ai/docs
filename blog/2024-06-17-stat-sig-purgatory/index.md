@@ -1,14 +1,12 @@
 ---
 slug: stat-sig-purgatory
-title: Stat Sig Purgator (RL Can Help
+title: "The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)"
 authors: [james]
 image: ./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png
 tags: [statsig, rl, ab-testing]
 ---
 
 ![Too Many UI Variations](./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png "More variations adds combinatorial complexity to A/B testing programs")
-
-# The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)
 
 In the relentless pursuit of conversion rate optimization (CRO), A/B testing has long been the reigning champion. It allows you to compare variations of your website elements, from headlines to layouts, and identify the statistically "better" performer. But for all its strengths, A/B testing comes with a soul-crushing enemy: the wait for statistical significance.
 
