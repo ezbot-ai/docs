@@ -12,6 +12,8 @@ tags: [statsig, rl, ab-testing]
 
 In the relentless pursuit of conversion rate optimization (CRO), A/B testing has long been the reigning champion. It allows you to compare variations of your website elements, from headlines to layouts, and identify the statistically "better" performer. But for all its strengths, A/B testing comes with a soul-crushing enemy: the wait for statistical significance.
 
+<!-- truncate -->
+
 This blog post delves into the pain points of lingering in the statistical significance purgatory and explores an alternative approach – using reinforcement learning (RL) to optimize user experiences. Buckle up, because we're about to expose the limitations of A/B testing and unveil a path towards a faster, more data-efficient journey to CRO nirvana.
 
 ## How A/B Testing is Supposed to Work
