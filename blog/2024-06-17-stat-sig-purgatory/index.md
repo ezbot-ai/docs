@@ -1,23 +1,28 @@
-## Stuck in A/B testing purgatory? ⏰ There's a better way.
-
-Reinforcement learning (RL) personalizes user experiences in real-time, ditching the wait for statistical significance.
-
-RL handles complex interactions & learns from smaller data sets, leading to faster results & higher conversions. #CRO #MachineLearning #ExperienceOptimization
-
-## The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)
-
+---
+slug: stat-sig-purgatory
+title: Stat Sig Purgator (RL Can Help
+authors: [james]
+image: ./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png
+tags: [statsig, rl, ab-testing]
 ---
 
-## The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)
+![Too Many UI Variations](./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png "More variations adds combinatorial complexity to A/B testing programs")
+
+# The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)
 
 In the relentless pursuit of conversion rate optimization (CRO), A/B testing has long been the reigning champion. It allows you to compare variations of your website elements, from headlines to layouts, and identify the statistically "better" performer. But for all its strengths, A/B testing comes with a soul-crushing enemy: the wait for statistical significance.
 
 This blog post delves into the pain points of lingering in the statistical significance purgatory and explores an alternative approach – using reinforcement learning (RL) to optimize user experiences. Buckle up, because we're about to expose the limitations of A/B testing and unveil a path towards a faster, more data-efficient journey to CRO nirvana.
 
-**How A/B Testing is Supposed to Work**
+## How A/B Testing is Supposed to Work
+
 A/B testing, or split testing, involves comparing two versions (A and B) of a webpage element or entire page layout to see which performs better in achieving a specific goal. This goal could be anything from increasing signups to reducing bounce rate (percentage of visitors who leave without taking action).
 
+### Phase 1: Discovery
+
 First, you must identify an area for improvement. This could be anything from the call to action button to the overall layout of your landing page. Typically, analytics help teams identify pages that are not converting, buttons that are not being clicked, forms that are being abandoned, etc. If sign-ups are a goal, and forms are frequently abandoned halfway through, the form layout or flow may be a candidate for improvement.
+
+### Phase 2: Ideation and Creation
 
 Then, you need to develop a hypothesis. This predicts which version of the element or page will perform better based on user behavior or design principles. We can split the process into multiple, more digestible forms for the low sign-up form, a process known to help people complete sign-up flows. We may also have some ideas about the phrasing of specific form steps or some ideas about call-to-action text on the form to encourage completion.
 
@@ -25,11 +30,15 @@ Most people have dozens of ideas in the hypothesis phase that _may_ work, but in
 
 Next, create variations. You'll build two (or three or four) versions (A and B) of the element or page, each with a different design or functionality. While this may seem like the hard part of the process, it can be fun for most creative and engineering teams. The cycle of hypothesizing and then building solutions is where humans add the most value to CRO and UX experimentation.
 
+### Phase 3: Experiment Design and Analytics
+
 Then, your website traffic is divided, with a portion seeing version A and the other portion seeing version B. Traffic can be divided a number of different ways. The simplest is randomly serving variations to each user while tracking which variation they received and how they performed on your website. More complex teams may carve up their traffic further; sometimes, a marketer responsible for the "young urban professionals" demographic may run experiments _only_ on users within that demographic. Other marketers would handle other "segments" of users.
 
 If multiple experiments run simultaneously, the traffic must be carefully carved up and tracked to ensure that experiments either 1) run completely isolated from each other or 2) run with each other but carefully to ensure statistics can be separated from each other.
 
 Finally, you'll use analytics tools to track user behavior on both (or all) versions, focusing on metrics like clicks, conversions, and time spent on the page. After a set period, you analyze the data to see which version performed better in achieving your goal. For teams running multiple experiments, each would run on its own separate cycle, with decisions managed by the marketer in charge.
+
+### A/B Testing: Lots of human touchpoints
 
 In this scenario, [a human must](https://www.optimizely.com/optimization-glossary/ab-testing/):
 
@@ -43,7 +52,7 @@ In this scenario, [a human must](https://www.optimizely.com/optimization-glossar
 
 The human in charge of this campaign frequently has their performance reviews tied to the outcomes of their experimental program and its ability to drive results. You may see some problems with the current model.
 
-**The Statistical Significance Struggle: A Familiar A/B Testing Foe**
+## The Statistical Significance Struggle: A Familiar A/B Testing Foe
 
 Imagine this scenario: you've meticulously crafted two variations for your landing page call to action button – a bold red one and a more subdued blue one. You've launched an A/B test, and the results are… inconclusive. The data shows a slight trend towards the red button, but it's not statistically significant yet. You're stuck in the waiting game – a period of agonizing uncertainty as you gather more data, hoping the trend solidifies.
 
@@ -59,7 +68,9 @@ This is the bane of A/B testing: the reliance on statistical significance. Here'
 
 Again, the human responsible for this decision-making has their performance tied to the results of these efforts. There can be strong pressure to show positive results before stat sig, or on the flip side, completely forgotten experiments that run forever.
 
-**Beyond the Binary: The Limitations of A/B Testing**
+![Complex CRO Team](./craiyon_083931_PROFESIONAL_WEBSITE.png "An effective A/B testing program takes a lot of human effort to achieve results")
+
+## Beyond the Binary: The Limitations of A/B Testing
 
 A/B testing excels at comparing two or a few pre-defined variations. However, the real world of user experience is far more nuanced.
 
@@ -67,7 +78,7 @@ One major hurdle is the **combinatorial explosion**. Imagine testing multiple el
 
 Another limitation is the inherent "one-size-fits-all" approach of A/B testing. It typically presents the winning variation to all users, regardless of their needs or preferences. This is problematic because different user segments respond better to different experiences. For example, a younger demographic might prefer a bolder design with brighter colors, while an older demographic might gravitate toward a more minimalist layout. A/B testing might optimize for the majority, but it could leave a significant portion of your user base with a sub-par experience.
 
-**Enter Reinforcement Learning: A Data-Driven Escape Hatch**
+## Enter Reinforcement Learning: A Data-Driven Escape Hatch
 
 Reinforcement learning (RL) offers a powerful alternative to A/B testing for user experience optimization. Here's how it unlocks possibilities beyond the statistical significance purgatory.
 
@@ -77,7 +88,9 @@ A/B testing often optimizes for the "average" user, which can neglect the needs 
 
 RL excels at learning from relatively little data. By focusing on maximizing rewards with each interaction, RL systems can identify effective user experiences much faster than A/B testing. This allows you to capture value sooner, implementing improvements that drive conversions and user satisfaction without waiting for weeks or months of data collection. This rapid learning cycle is a game-changer, particularly for businesses that need to adapt and optimize quickly in a competitive landscape.
 
-**The RL Advantage**
+![Focus UX professionals on what matters](./hero2.png "Lots of small details create friction in user experiences, or waste valuable space on screen and in the users mind.")
+
+## The RL Advantage
 
 Traditional A/B testing has served us well, but it has limitations. Here's how RL-based CRO offers a powerful alternative:
 
