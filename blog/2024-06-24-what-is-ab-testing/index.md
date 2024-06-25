@@ -12,7 +12,7 @@ tags:
   - statsig
 ---
 
-![ezbot logo]©
+![Coffee](./coffee.png)
 
 ## A/B Testing: the Best Way to Improve Websites?
 
