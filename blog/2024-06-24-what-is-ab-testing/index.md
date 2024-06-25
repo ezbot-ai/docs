@@ -3,9 +3,16 @@ slug: what-is-ab-testing
 title: What is A/B Testing?
 authors:
   - haydee
+image: ./coffee.png
+tags:
+  - ab-testing
+  - experimentation
+  - website
+  - coffee
+  - statsig
 ---
 
-![ezbot logo](./coffee.png)
+![ezbot logo]©
 
 ## A/B Testing: the Best Way to Improve Websites?
 
