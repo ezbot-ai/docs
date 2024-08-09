@@ -8,7 +8,6 @@ tags:
   - ab-testing
   - experimentation
   - website
-  - coffee
   - statsig
 ---
 

@@ -3,7 +3,7 @@ slug: stat-sig-purgatory
 title: "The Statistical Significance Purgatory: Why A/B Testing Can Leave You Stuck (and How RL Offers Escape)"
 authors: [james]
 image: ./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png
-tags: [statsig, rl, ab-testing]
+tags: [statsig, reinforcement-learning, ab-testing]
 ---
 
 ![Too Many UI Variations](./craiyon_083939_an_illustration_depicting_the_process_of_audit_sampling_in_a_financial_audit.png "More variations adds combinatorial complexity to A/B testing programs")
