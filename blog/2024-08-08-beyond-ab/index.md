@@ -6,12 +6,11 @@ authors:
 image: ./ezbotPrediction.png
 tags:
   - statsig
-  - rl
   - ab-testing
   - reinforcement-learning
   - experimentation
   - rewards
-  - ml
+  - machine-learning
   - deep-dive
   - advanced
 ---
