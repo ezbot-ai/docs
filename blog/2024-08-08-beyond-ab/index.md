@@ -8,10 +8,10 @@ tags:
   - statsig
   - rl
   - ab-testing
-  - "#reinforcement-learning"
+  - reinforcement-learning
   - experimentation
   - rewards
-  - "#ml"
+  - ml
   - deep-dive
   - advanced
 ---
