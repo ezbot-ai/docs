@@ -20,7 +20,7 @@ Ezbot is using deep reinforcement learning to transform how user experiences are
 
 <!-- truncate -->
 
-# The Problem(s)
+## The Problem(s)
 
 Website optimization has been around for a long time. Every website user is an opportunity – they may purchase items, request a demo, read articles and view ads, or donate to your cause. We aim to maximize those opportunities by finding the user experience that maximizes our business goals: revenue, leads generated, ad impressions, or donations.
 
@@ -33,7 +33,7 @@ Traditionally, the best way to accomplish this is called A/B testing. We create 
 
 While this process sounds simple and does work quite well, it has a number of drawbacks. To highlight those drawbacks, let’s discuss a simple, small-sized e-commerce website with 20k monthly users. For those unfamiliar with the term, users " convert” when they buy a product from the website. The percentage of users who “convert” is the “conversion rate.” While conversion rates vary quite a bit across industries and products, assuming a 2.5% conversion rate for general e-commerce is reasonable. For every 1000 visitors, only 25 will buy something; for our 20k monthly visits, we typically see 500 sales.
 
-## Problem 1: Speed
+### Problem 1: Speed
 
 Now, we want to run our single A/B test. At the end of one month, our default (A) had 250 sales, as expected, and our experiment (B) had 280. Great, right? Unfortunately, this test doesn’t have statistical significance yet; we must wait almost another month to “know” our experiment has a 12% improvement that isn’t random. Only after two months could we implement B for everyone and begin a new test.
 
@@ -43,23 +43,23 @@ Now, we want to run our single A/B test. At the end of one month, our default (A
 </figure>
 Our first drawback of traditional A/B testing is that it’s dreadfully slow. The nature of statistics means that the lower our conversion rates, the longer we have to run experiments. On top of that, if our experiment is only slightly better than the default, we have to run the experiment for much longer than if the experiment is much better than the default. To put that another way, if the graphs above are close together (similar conversion rates), it will take a long time to tell which is better. We can conclude the experiment much sooner if the graphs are further apart (very different conversion rates). These factors often lead to teams preemptively ending experiments and going with their gut feeling, negating the point of testing in the first place.
 
-## Problem 2: Complexity
+### Problem 2: Complexity
 
 Let’s assume our site has more traffic, enough that we can easily run multiple experiments, say 1 million monthly visits. We likely have an experimentation team that wants to run multiple experiments simultaneously at this size. Running simultaneous experiments now means we can run into interaction effects – when one experiment interacts with another either positively or negatively. We could isolate our tests and run them in isolation. We can also run multi-variate tests, intentionally trying to capture interactions. The team must work carefully to ensure their testing conditions are as expected, or their results may be invalidated. To make matters worse, at this size, our company likely has other marketing or personalization teams changing the user experience outside of our experimentation model, meaning there are confounding variables all over the place.
 
 The second drawback is the complexity of managing experiments and experimentation teams. Many human decisions are involved to ensure the program's integrity, and it takes watchful human eyes to ensure no time is wasted on bad tests, old tests, or completed tests. On top of this added complexity, we typically see that individual experiments still take significant time to conclude because traffic is allocated to so many simultaneous experiments. Whether large teams or small, managing experimental complexity is a burden, preventing or slowing UX optimization to a crawl.
 
-## Problem 3: Cost
+### Problem 3: Cost
 
 The two first drawbacks combine into the third: cost. All the tools available on the market still require at least one user with significant statistical understanding – a high-paying role. Someone has to monitor for statistical significance and carefully construct experimental programs. We must scale the number of experts linearly for higher traffic or more experiments. This scaling flattens out as herding the experimental geese becomes untenable. Higher investments in experimentation do not continue to yield better results.
 
 In addition to the personnel cost, the tools available today are costly. Many vendors require initial service fees upwards of $30k, with yearly licenses starting at $50k and running well into the millions. These vendors all have traffic minimum requirements as high as 250k monthly visits. These prices, specialist teams, and traffic minimums put the tools well out of reach of most companies.
 
-# How Deep Reinforcement Learning Can Help
+## How Deep Reinforcement Learning Can Help
 
 At ezbot, we use deep reinforcement learning to create an ideal optimization experience. It’s designed to explore uncountable UX variations quickly and start driving traffic toward valuable experiences. Our deep neural networks can detect positive changes faster than human teams can be sure of experimental results. Interaction effects are accounted for across the board, minimizing management overhead and maximizing the chances of finding positive experiences. With ezbot, no one needs to be a statistical expert to control or interpret the results. Traffic minimums are a thing of the past, enabling even the smallest sites to easily experiment and optimize their UX.
 
-## Sample Efficiency
+### Sample Efficiency
 
 As mentioned above, low conversion rates create fundamental statistical problems, making it difficult to try many options. For a traditional A/B test, we must collect tens of thousands of samples for each variation at a minimum. In machine learning language, traditional A/B testing has very poor “sample efficiency”; it learns very little from each user session. In contrast, deep reinforcement learning methods are designed from the start to have extremely high sample efficiency. This means they can learn much more from a given number of samples than traditional statistical methods, making them more effective in optimizing user experiences.
 
@@ -72,7 +72,7 @@ This sample efficiency from deep reinforcement learning means ezbot can evaluate
 ![Ezbot's dashboard for a real, small traffic customer](./ezbotDashboard.png)
 <figcaption>Ezbot's dashboard, with our actual 20k monthly session customer. On the right most graph, you can see Combination 19 has _more than a 100%_ improvement in conversion rates. In the center graph, you can see ezbot is currently serving Combination 19 about 40% of the time. Other variations still get served for various reasons: different user preferences, exploring untested combinations, etc. Yes, in the last 14 days, we've generated 72 additional conversions for this customer.</figcaption>
 </figure>
-## Agency and Decision Making
+### Agency and Decision Making
 As you can see, deep learning dramatically improves the time-to-value even with low traffic. The reinforcement learning agent enables ezbot to wrangle the complexities of decision-making. After variations are created, ezbot takes control. In a traditional A/B test, a human must monitor the data until statistically significant results are obtained. Depending on the impact of the change, this could take more or less time; a small impact means a long test, while a larger impact can lower the amount of data required. In larger teams, tests are often forgotten completely, and random variations run until the end of time. Humans are also monitoring for poorly performing variations because testing a bad UX for too long wastes the revenue you could generate. 
 <figure>
 ![Ezbot shifts traffic from poor performing UX to winning UX experiences over time](./ezbotTrafficSplit.png)
@@ -86,7 +86,7 @@ With some view of why we’ve created a deep reinforcement learning algorithm to
 ![Ezbot does more than optimize; it finds personalized optimums](./DifferentUsersDifferentUX.png)
 <figcaption>Because ezbot considers an individual's context, it can ensure that each user gets the best user experience _for them_.</figcaption>
 </figure>
-# Collecting Data
+## Collecting Data
 We need to start with a good dataset to get the most out of an AI system. For simple A/B testing, we only need a few pieces of data:
 
 - A session identifier to uniquely identify sessions, primarily to ensure we aren’t double-counting
@@ -103,7 +103,7 @@ Ezbot’s data collection system closely resembles Google Analytics. While users
 
 In addition to helping us understand how a user experiences a website, our data collection helps us understand a little about the users themselves. We learn how they arrived at our customer's page, what time zone they are in, and potentially what type of device and os they are using. This data is annotated automatically with the UX ezbot selected for this user, along with other key information to help our model learn. The broad and deep view of how users experience a website sets ezbot’s data miles apart from traditional UX optimization.
 
-# Enriching Data; Feature Engineering
+## Enriching Data; Feature Engineering
 
 We can enrich the session data with additional information in an enrichment process. One simple example is using a User Agent parser to break apart a User Agent string into more digestible components. We can also parse UTM and other marketing parameters into individual fields, anonymize user data, and even complete lookups like turning IP addresses into approximate geolocations.
 
@@ -117,7 +117,7 @@ My favorite simple example of feature engineering is representing time. For vari
 
 With our enriched data, we have enormous room to engineer new features for the foreseeable future.
 
-# Understanding and Scoring a Session
+## Understanding and Scoring a Session
 
 When a user visits a website, the typical view of that session is binary. Either that user “converted” by engaging in some way (purchase, signup, etc.), or they didn’t. In an e-commerce context, there is no conversion when a customer visits the site, browses many pages, reads reviews, and adds items to their cart but doesn’t checkout. A user with a session like that has provided tons of information regarding user experience. This person found the reviews, was able to navigate through pages, and was able to add items to their cart repeatedly!
 
@@ -125,7 +125,7 @@ What if we could more accurately represent the “value” of this non-convertin
 
 At ezbot, we can score every single session using deep reinforcement learning. Because we’ve cultivated a rich dataset and used deep reinforcement learning, our model can learn about sessions significantly faster than traditional A/B testing. Our feature engineering work has laid a nearly unlimited roadmap for exploring new ways to understand the data even more efficiently. Our exact algorithms and data processing are proprietary; we’re constantly iterating and improving on both.
 
-# State, Action, Reward/How we RL at a basic level?
+## State, Action, Reward/How we RL at a basic level?
 
 Ezbot learns how to act based on a simple, repetitive process. When a user arrives on our customer’s page, ezbot predicts the best possible user experience for that specific user using all of the information available to us when they arrive: things like their local time of day, device type, how many times they have visited previously, what page they’ve arrived on. This information is called “Context” or “State” information, and in reinforcement learning terms, our prediction is known as an “Action.”
 
@@ -141,7 +141,7 @@ Our deep neural network model performs a very simple function: given a user’s 
 
 By training offline and promoting checkpoints to production when evaluated, we follow the industry best practices used by AI giants like Open AI, Anthropic, and Google. In addition to having the chance to evaluate the model, running predictions from a Checkpoint ensures we have stable results for some time and avoids unexpected runaways that can happen in online reinforcement learning.
 
-# Serving and Selecting an Action: Explore/Exploit
+## Serving and Selecting an Action: Explore/Exploit
 
 With training completed and a checkpoint in hand, we can return to where we started: predicting the best UX for our customers. When available, we transition requests off of the previous Checkpoint and onto the freshest Checkpoint. To remind you, when we give a Checkpoint a user’s Context, it predicts the best UX for that user.
 
@@ -157,7 +157,7 @@ Our Checkpoints, under the hood, are assigning probabilities to all of our possi
 ![Sample action probability distributions](./ActionProbabilityDensities.png)
 <figcaption>Each distribution represents where a conversion rate _may_ be. As we serve a variation more, it gets taller (more confidence) and narrower as we become more and more sure what the conversion rate actually is. If you're getting more and more certain that purple is the best performer, you can retest the green option less and less often. This is a simplification, as it doesn't account for different contexts, but it helps us understand how we gain confidence over time.</figcaption>
 </figure>
-# Repeat
+## Repeat
 Part of the beauty of ezbot is that experiments need not ever end. As we collect more data, we can update the model and respond to changing user preferences, seasonal variations, and more. Our customers can add Variables (UX elements) and Variations (different options for a given Variable) whenever they want. Ezbot takes all of its knowledge from the past and continues to search for a new optimum with the new UX combinations. 
 
 Our whole data collection and training process is a cycle: prediction, collection, enrichment, training, prediction…
