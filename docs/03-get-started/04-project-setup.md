@@ -6,8 +6,6 @@ sidebar_position: 4
 
 ## Create a Project
 
-After [signing up, creating an organization, and starting a subscription](./02-sign-up.md), your next step is to create a project.
-
 Each **organization** can have multiple **projects**. **Projects** contain **variables**, **variations**, **attributes**, and **settings** like the **holdback percentage**. Projects help organize your data within a specific scope, separate from other data. For best results with ezbot, use as few projects as possible.
 
 ## Holdback Percentage

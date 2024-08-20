@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import BOOK_DEMO_URL from "./src/util/constants";
 
 const config: Config = {
   title: "ezbot.ai Docs",
@@ -143,27 +144,10 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
-        // {
-        //   href: "https://ezbot.ai/pricing.html",
-        //   position: "right",
-        //   html: "<span class='navbar__item navbar__link badge badge--info'>Pricing</span>",
-        //   class: "navbar-button",
-        // },
-        // {
-        //   href: "https://app.ezbot.ai/sign-up",
-        //   position: "right",
-        //   html: "<span class='navbar__item navbar__link badge badge--primary'>Free Trial</span>",
-        //   class: "navbar-button",
-        // },
         {
-          href: "https://ezbot.ai/pricing.html",
+          href: BOOK_DEMO_URL,
           position: "right",
-          label: "Pricing",
-        },
-        {
-          href: "https://app.ezbot.ai/sign-up",
-          position: "right",
-          label: "Free Trial",
+          label: "Book a Demo",
         },
         // {
         //   href: "https://github.com/ezbot-ai/docs",
