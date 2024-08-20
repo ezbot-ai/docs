@@ -1,7 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import BOOK_DEMO_URL from "./src/util/constants";
 
 const config: Config = {
   title: "ezbot.ai Docs",
@@ -145,7 +144,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: BOOK_DEMO_URL,
+          href: "https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f",
           position: "right",
           label: "Book a Demo",
         },

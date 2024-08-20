@@ -19,8 +19,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/get-started/overview">
-            Get Started - 5min ⏱️
+            target='_blank'
+            href="https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f">
+            Book a Demo
           </Link>
         </div>
       </div>
