@@ -68,13 +68,7 @@ Testing new ideas always carries some risk. However, ezbot.ai continuously monit
 
 ### Getting Started with ezbot.ai: A Step-by-Step Guide
 
-:::info
-
-Using ezbot requires a subscription. [Book a Demo today](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f) to see ezbot in action on your website.
-
-:::
-
-1. **Book a Demo:** The first step to improving your conversion rate is to [book a demo](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f), where a team member will show you ezbot in action on your website. Once you have a subscription, the intuitive setup process will guide you through creating your account and integrating ezbot.ai with your website.
+1. **Book a Demo:** The first step to improving your conversion rate is to [book a demo](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f), where a team member will show you ezbot in action on your website. Once you have a subscription, the intuitive setup process will guide you through setting up your account and integrating ezbot.ai with your website.
 
 2. **Define Your Goals and Metrics:** Before you start experimenting, it’s essential to define your goals and metrics. What are you trying to achieve? Increased conversions? Improved user engagement? Clear goals will help you measure the success of your experiments. You can read more about setting the right goals in our [strategize doc.](/get-started/strategize)
 
