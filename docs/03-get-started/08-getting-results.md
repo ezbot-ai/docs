@@ -35,13 +35,11 @@ We will soon introduce a metric to show how much additional **revenue** you're g
 
 ## Graphs
 
-![ezbot menu](../img/ezbot_app_traffic_distribution.png)
+![ezbot menu](../img/ezbot-dashboard-graphs.png)
 
-:::info
+### ezbot vs. Default Conversion Rate
 
-**Note:** The graphs below reflect development data. In a real-world scenario, you would expect to see a positive number of conversions and more refined graphs. We look forward to updating this image soon.
-
-:::
+The "ezbot vs. Default Conversion Rate" graph offers a clear snapshot of ezbot's effectiveness. It compares the average conversion rate of the default combination (calculated over the past 180 days) with the 14-day average conversion rate of the optimized or experimental combinations. This helps you quickly assess how ezbot's model is performing relative to your website or app without ezbot, or, if the default values differ from the original setup, how ezbot is performing compared to those default values.
 
 ### Traffic Distribution
 
