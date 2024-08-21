@@ -68,7 +68,7 @@ Testing new ideas always carries some risk. However, ezbot.ai continuously monit
 
 ### Getting Started with ezbot.ai: A Step-by-Step Guide
 
-1. **Sign Up and Set Up Your Account:** The first step to improving your conversion rate is to [sign up for ezbot.ai.](https://app.ezbot.ai/sign-up) The intuitive setup process will guide you through creating your account and integrating ezbot.ai with your website.
+1. **Book a Demo:** The first step to improving your conversion rate is to [book a demo](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f), where a team member will show you ezbot in action on your website. Once you have a subscription, the intuitive setup process will guide you through setting up your account and integrating ezbot.ai with your website.
 
 2. **Define Your Goals and Metrics:** Before you start experimenting, it’s essential to define your goals and metrics. What are you trying to achieve? Increased conversions? Improved user engagement? Clear goals will help you measure the success of your experiments. You can read more about setting the right goals in our [strategize doc.](/get-started/strategize)
 
@@ -96,10 +96,10 @@ As the digital landscape continues to evolve, businesses must adapt to stay comp
 
 #### Join the Revolution
 
-Are you ready to transform your approach to A/B testing and website optimization? Join the revolution with ezbot.ai. [Sign up today](https://app.ezbot.ai/sign-up) and start experimenting with confidence, knowing you have the power of advanced AI at your fingertips.
+Are you ready to transform your approach to A/B testing and website optimization? Join the revolution with ezbot.ai. Start experimenting with confidence, knowing you have the power of advanced AI at your fingertips. [Book a demo](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f) to see ezbot in action on your website.
 
 ### A New Era of Experimentation
 
 ezbot.ai is more than just a tool; it’s a game-changer for businesses looking to optimize their digital experiences. By automating the A/B testing process with AI, ezbot.ai makes experimentation accessible, efficient, and effective. Embrace the future of website optimization with ezbot.ai and unlock the full potential of your digital business.
 
-For more information on the value of experimentation, check out this insightful article from Optimizely. And if you’re ready to see ezbot.ai in action, visit [our website](https://ezbot.ai) and start your free trial today.
+If you’re ready to see ezbot in action on your website, [book a demo today.](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f) Let’s revolutionize your approach to A/B testing together.

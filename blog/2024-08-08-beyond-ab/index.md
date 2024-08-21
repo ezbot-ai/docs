@@ -163,4 +163,4 @@ Our Checkpoints, under the hood, are assigning probabilities to all of our possi
 
 Our whole data collection and training process is a cycle: prediction, collection, enrichment, training, prediction…
 
-Ezbot is an entirely new category of tool in the UX optimizers toolkit. If you're excited about ezbot, [try it free for 30 days!](https://ezbot.ai/pricing.html)
+Ezbot is an entirely new category of tool in the UX optimizer's toolkit. If you're excited about ezbot, [book your demo today!](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f) We can't wait to show you how ezbot can transform your website's user experience.

@@ -9,7 +9,7 @@ ezbot simplifies and reduces the risks of experimentation, saving you time and r
 
 ## Get Started Quickly and Easily
 
-ezbot integrates seamlessly with any website, app, or framework, allowing you to start optimizing in no time. Signing up and installing ezbot is simple, and every subscription includes a one-month free trial, so you can try it risk-free. Just [sign up here](https://app.ezbot.ai/sign-up) and start optimizing!
+ezbot integrates seamlessly with any website, app, or framework, allowing you to start optimizing in no time. [Book a demo today](https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f) to see ezbot in action on your website.
 
 ### Two Ways to Use ezbot
 

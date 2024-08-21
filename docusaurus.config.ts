@@ -143,27 +143,10 @@ const config: Config = {
           label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
-        // {
-        //   href: "https://ezbot.ai/pricing.html",
-        //   position: "right",
-        //   html: "<span class='navbar__item navbar__link badge badge--info'>Pricing</span>",
-        //   class: "navbar-button",
-        // },
-        // {
-        //   href: "https://app.ezbot.ai/sign-up",
-        //   position: "right",
-        //   html: "<span class='navbar__item navbar__link badge badge--primary'>Free Trial</span>",
-        //   class: "navbar-button",
-        // },
         {
-          href: "https://ezbot.ai/pricing.html",
+          href: "https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f",
           position: "right",
-          label: "Pricing",
-        },
-        {
-          href: "https://app.ezbot.ai/sign-up",
-          position: "right",
-          label: "Free Trial",
+          label: "Book a Demo",
         },
         // {
         //   href: "https://github.com/ezbot-ai/docs",
