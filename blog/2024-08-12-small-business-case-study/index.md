@@ -107,10 +107,10 @@ You may have noticed that on August 17th, the blue variation was shown to 100% o
 
 ### ezbot's Performance
 
-The two lines on this graph compare the conversion rates of your default website and the experimental group that ezbot has optimized. The lighter purple and grey sections around the lines represent the potential room for error in these calculations (the 95% confidence interval). At the beginning of the month, the confidence interval was very wide because ezbot was just starting to learn. As it gathered more data, the purple confidence interval got more narrow. The grey confidence interval represents Topeca's original conversion rate, and since they have many months of data confirming it, the confidence interval is more narrow.
+The two lines on this graph compare the conversion rates of your default website and the experimental group that ezbot has optimized. The lighter purple and grey sections around the lines represent the potential room for error in these calculations (the 95% confidence interval). At the beginning of the month, the confidence interval was very wide because ezbot was just starting to learn. As it gathered more data, the purple confidence interval got more narrow, and the performance of ezbot's recommendations got better. The grey confidence interval represents Topeca's original conversion rate, and since they have many months of data confirming it, this confidence interval is very narrow.
 
 ![traffic distribution](topeca_cr_default.png)
 
-### Optional Discussion of This Section?
+Once you understand this graph, it paints a very clear picture. At first, ezbot tries everything and performs just around chance. In this case, that was near the default conversion rate of 2.3%. As ezbot serves variations to users and learns what works best, it not only gets more confident in its predictions, but is able to serve the variations that convert users and drive more sales for customers like Topeca.
 
-![topeca variations](topeca_variations.png)
+This is how we doubled Topeca's conversion rates in one month.
