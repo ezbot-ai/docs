@@ -40,17 +40,25 @@ import { useEffect, useRef } from "react";
 export default function ComponentName() {
   const ezbotInit = useRef(false);
   useEffect(() => {
-    if (ezbotInit.current) {
-      return;
+    async function ezbotInitFn() {
+      if (ezbotInit.current) {
+        return;
+      }
+      try {
+        await initEzbot(0); // Replace 0 with your project ID
+        startActivityTracking({
+          minimumVisitLength: 2,
+          heartbeatDelay: 2,
+        });
+        trackPageView();
+        makeVisualChanges();
+        ezbotInit.current = true;
+        console.log("Ezbot initialized successfully");
+      } catch (error) {
+        console.error("Error initializing Ezbot:", error);
+      }
     }
-    initEzbot(0); // Replace 0 with your project ID
-    startActivityTracking({
-      minimumVisitLength: 2,
-      heartbeatDelay: 2,
-    });
-    trackPageView();
-    makeVisualChanges();
-    ezbotInit.current = true;
+    ezbotInitFn();
   }, []);
 
   return <div>{/* your component */}</div>;
