@@ -12,6 +12,10 @@ A complete installation requires two steps:
 - Tracking code must be loaded on _every_ page of your website.
 - You may optionally add a call to `trackRewardEvent` to optimize for a specific user action, or use [Page View Events as rewards in ezbot](/get-started/rewards#page-view-events).
 
+## via Google Tag Manager (GTM)
+
+If you have Google Tag Manager installed, you can install ezbot with just a few clicks. [Follow the steps in our new GTM Installation Guide here.](../04-guides/installation//02-google-tag-manager.md)
+
 ## via JavaScript Snippet
 
 The easiest way to install ezbot is to use our JavaScript Snippet. The JavaScript Snippet is a small piece of code that you add to your website. It will automatically load the ezbot library and start tracking your users.
