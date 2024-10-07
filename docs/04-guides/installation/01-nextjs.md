@@ -6,23 +6,15 @@ tags: [rewards]
 
 # Next.js
 
-We support Next.js with our JavaScript SDK. To get started, you'll need to install the SDK and initialize it in your Next.js project.
-
-The Javascript SDK supports in-code experimentation and our Visual Editor. To get started, create a component that you'll later use in a top-level component, such as a layout.
+Integrate ezbot’s JavaScript SDK into your Next.js project to leverage AI-driven experimentation directly in your code. Our SDK supports both in-code experimentation and the Visual Editor.
 
 ## Installation
 
-To install the SDK, run the following command in your Next.js project:
+Install the SDK with the following command:
 
 ```bash
 npm install @ezbot-ai/javascript-sdk
 ```
-
-In a top-level component such as a layout, initialize ezbot. This will ensure that ezbot is initialized on every page. `"use client"` (client-side rendering) is necessary because a session id is created on the client and the tracking occurs client-side. Use the React Hook `useEffect` to initialize ezbot. If you're using `"use strict"` (Strict Mode), you'll need to use a ref to prevent multiple initializations in your development environment. Strict Mode does not affect production.
-
-### Top-level Initialization
-
-Make sure to initialize ezbot on every page for tracking purposes. You can do this in a top-level component such as a layout.
 
 ```js
 "use strict";
@@ -34,11 +26,21 @@ import {
   trackRewardEvent,
   makeVisualChanges,
 } from "@ezbot-ai/javascript-sdk";
-import { useEffect, useRef } from "react";
-// ... other imports
+import { createContext, useContext, useState, useEffect, useRef } from "react";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
-export default function ComponentName() {
+const defaultState = {
+  predictions: null,
+};
+
+const EzbotContext = createContext(defaultState);
+
+export default function Home() {
   const ezbotInit = useRef(false);
+  const [currentEzbot, setCurrentEzbot] = useState(null);
+
+  // This is the recommended way for using ezbot predictions in a component
   useEffect(() => {
     async function ezbotInitFn() {
       if (ezbotInit.current) {
@@ -53,6 +55,7 @@ export default function ComponentName() {
         trackPageView();
         makeVisualChanges();
         ezbotInit.current = true;
+        setCurrentEzbot({ predictions: window.ezbot.predictions });
         console.log("Ezbot initialized successfully");
       } catch (error) {
         console.error("Error initializing Ezbot:", error);
@@ -60,12 +63,36 @@ export default function ComponentName() {
     }
     ezbotInitFn();
   }, []);
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-  return <div>{/* your component */}</div>;
+      <main>
+        <EzbotContext.Provider value={{ currentEzbot, setCurrentEzbot }}>
+          <EzbotTestComponent></EzbotTestComponent>
+        </EzbotContext.Provider>
+      </main>
+    </div>
+  );
+}
+
+export function EzbotTestComponent() {
+  const { currentEzbot, setCurrentEzbot } = useContext(EzbotContext);
+  console.log(currentEzbot);
+  if (currentEzbot !== null && currentEzbot.predictions !== null) {
+    return <p>Predictions: {currentEzbot.predictions} existed.</p>;
+  }
+
+  return <p>No Predictions.</p>;
 }
 ```
 
-### Reward Tracking From a Component
+## Tracking Reward Events
+
+To track user interactions like button clicks, use the trackRewardEvent function:
 
 ```js
 "use client";
@@ -84,13 +111,11 @@ export default function ComponentName() {
 }
 ```
 
-### Using Predictions
+## Using Predictions in Your Components
 
-Change your user's experience based on the predictions made by ezbot.
+After initializing, you can access predictions via window.ezbot.predictions or by storing them in a global state. Here’s an example prediction format:
 
-Below is just an example. After initializing ezbot, you can use the `window.ezbot.predictions` object to access the predictions.
-
-#### Example Predictions Response
+### Example Predictions Response
 
 ```json
 {
@@ -114,36 +139,7 @@ Below is just an example. After initializing ezbot, you can use the `window.ezbo
 }
 ```
 
-#### In a Component
-
-```js
-"use client"
-import { trackRewardEvent } from "@ezbot-ai/javascript-sdk";
-import { useEffect, useState } from 'react';
-
-export default function ComponentName() {
-
-  const ctaText = useState("your fallback value");
-
-  useEffect(() => {
-    const predictions = window.ezbot.predictions;
-    if (predictions) {
-      // Use the predictions to change the user experience
-      predictions.find(prediction => prediction.key === 'ctaText') {
-        ctaText.current = prediction.value;
-      }
-    }
-  });
-
-  return (
-    <button >
-      {{ctaText}}
-    </button>
-  )
-}
-```
-
-### Configuration Options
+## Configuration Options
 
 - **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
   - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
@@ -155,4 +151,4 @@ export default function ComponentName() {
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
 - **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
 
-Learn about other options for sending reward signals to ezbot in the [Rewards Section](/get-started/rewards).
+For additional options on sending rewards to ezbot, visit the [Rewards Section](/get-started/rewards).
