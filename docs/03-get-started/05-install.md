@@ -55,8 +55,8 @@ Install the following in the `<head>` tag of your website
 <script async>
   await ezbot.initEzbot(0); // Replace 0 with your project ID
   ezbot.startActivityTracking({
-      minimumVisitLength: 2,
-      heartbeatDelay: 2,
+      minimumVisitLength: 5,
+      heartbeatDelay: 10,
   });
   ezbot.trackPageView();
   ezbot.makeVisualChanges();
@@ -91,8 +91,8 @@ See the [next section](/get-started/rewards) for more information and an example
 #### Configuration Options
 
 - **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
-  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
-  - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
+  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity page scroll depth activity.
+  - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds) after the minimum visit length.
 - **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change. You can now use these events as rewards in ezbot. Learn more about rewards in the [next section](/get-started/rewards).
 - **trackRewardEvent**: Optional. Use this function for sending ezbot custom events that ezbot can use to improve the quality of our recommendations. It takes an object with three properties:
   - **key**: The string name of your reward.
@@ -141,8 +141,8 @@ import {
 } from "@ezbot-ai/javascript-sdk";
 await initEzbot(0); // Replace 0 with your project ID
 startActivityTracking({
-  minimumVisitLength: 2,
-  heartbeatDelay: 2,
+  minimumVisitLength: 5,
+  heartbeatDelay: 10,
 });
 trackPageView();
 makeVisualChanges();

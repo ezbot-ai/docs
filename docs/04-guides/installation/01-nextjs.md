@@ -49,8 +49,8 @@ export default function Home() {
       try {
         await initEzbot(0); // Replace 0 with your project ID
         startActivityTracking({
-          minimumVisitLength: 2,
-          heartbeatDelay: 2,
+          minimumVisitLength: 5,
+          heartbeatDelay: 10,
         });
         trackPageView();
         makeVisualChanges();
