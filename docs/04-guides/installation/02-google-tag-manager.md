@@ -53,8 +53,8 @@ The following code snippet initializes ezbot with support for changes made via o
       ezbotScript.onload = function() {
          ezbot.initEzbot(99).then(function() {
             ezbot.startActivityTracking({
-               minimumVisitLength: 2,
-               heartbeatDelay: 2,
+               minimumVisitLength: 5,
+               heartbeatDelay: 10,
             });
             ezbot.trackPageView();
             ezbot.makeVisualChanges();
