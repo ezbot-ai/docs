@@ -48,11 +48,11 @@ For now, we recommend choosing one primary goal to optimize for. If you have mul
 
 You can use ezbot in two ways:
 
-- **Visual Editor:** Ideal for non-technical users, this tool allows you to create and run experiments on your website without writing any code.
+- **Visual Editor:** Ideal for non-technical users, this tool allows you to create and run experiments on your website without writing any code. Simply install our [Chrome Extension](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi) and start experimenting.
 - **In-code:** Developers can use our JavaScript Browser SDK to integrate ezbot’s powerful optimization engine directly into their stack.
 
 :::tip
 
-**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started/)
+**Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the [Visual Editor](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi) for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK. For more details, check out the [get started section.](/category/get-started/)
 
 :::
