@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Capabilities
 
-This guide will help you understand the capabilities of the ezbot [Visual Editor](REPLACE_URL)
+This guide will help you understand the capabilities of the ezbot [Visual Editor](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi)
 
 ## Using the Visual Editor
 

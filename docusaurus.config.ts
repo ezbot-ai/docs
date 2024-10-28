@@ -144,7 +144,7 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "REPLACE_URL",
+          href: "https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi",
           position: "right",
           label: "Visual Editor Chrome Extension",
         },
