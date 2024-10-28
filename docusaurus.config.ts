@@ -144,6 +144,11 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
+          href: "REPLACE_URL",
+          position: "right",
+          label: "Visual Editor Chrome Extension",
+        },
+        {
           href: "https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f",
           position: "right",
           label: "Book a Demo",
