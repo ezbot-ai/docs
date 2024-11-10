@@ -6,7 +6,7 @@ tags: [rewards]
 
 # Next.js
 
-Integrate ezbot’s JavaScript SDK into your Next.js project to leverage AI-driven experimentation directly in your code. Our SDK supports both in-code experimentation and the [Visual Editor.](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi)
+Integrate ezbot’s JavaScript SDK into your Next.js project to leverage AI-driven experimentation directly in your code. Our SDK supports both in-code experimentation and the [Visual Editor.](../04-guides/visual/00-capabilities.md)
 
 ## Installation
 

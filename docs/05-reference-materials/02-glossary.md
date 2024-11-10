@@ -75,7 +75,7 @@ sidebar_position: 2
 <details>  
 <summary>**Prediction**</summary>  
 <div>  
-<p>ezbot personalizes your UX like a master chef crafting the perfect dish. By subtly changing elements like button colors, text, or layouts (think: ingredients!), ezbot tests different combinations ("recipes") to see what resonates with each user. When you initialize our code, it creates a unique session ID and requests a personalized "recipe" or set of variable predictions for each visitor. Simply integrate these suggestions into your code to deliver an optimized & personalized experience for everyone who visits your site. Predictions are automatically consumed if using our [Visual Editor](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi) and `makeVisualChanges()`</p>
+<p>ezbot personalizes your UX like a master chef crafting the perfect dish. By subtly changing elements like button colors, text, or layouts (think: ingredients!), ezbot tests different combinations ("recipes") to see what resonates with each user. When you initialize our code, it creates a unique session ID and requests a personalized "recipe" or set of variable predictions for each visitor. Simply integrate these suggestions into your code to deliver an optimized & personalized experience for everyone who visits your site. Predictions are automatically consumed if using our [Visual Editor](../04-guides/visual/00-capabilities.md) and `makeVisualChanges()`</p>
 </div>
 </details>
 
