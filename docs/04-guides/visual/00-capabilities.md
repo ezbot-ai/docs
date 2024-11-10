@@ -4,7 +4,13 @@ sidebar_position: 1
 
 # Capabilities
 
-This guide will help you understand the capabilities of the ezbot [Visual Editor](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi)
+This guide will help you understand the capabilities of the ezbot Visual Editor.
+
+:::warning
+
+The Visual Editor is currently in beta. Please reach out to support@ezbot.ai for instructions on how to access it prior to its Chrome Web Store release.
+
+:::
 
 ## Using the Visual Editor
 

@@ -34,13 +34,13 @@ Visual variables can be created using the **Visual Editor** or by clicking on th
 
 :::tip
 
-We recommend using the [Visual Editor](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi) to create, edit, and delete visual variables.
+We recommend using the [Visual Editor](../04-guides/visual/00-capabilities.md) to create, edit, and delete visual variables.
 
 :::
 
 ## Visual Editor
 
-The Visual Editor allows you to make changes to your website without writing any code. You can change text, styles, links, images, and more. To use the Visual Editor, you must first install the JavaScript Snippet or Node SDK and use `makeVisualChanges()` in your code. Then, install the [ezbot.ai Visual Editor Chrome Extension](https://chromewebstore.google.com/detail/ezbot.ai/dnaacccgllfmhlcjgoehniffflipikpi).
+The Visual Editor allows you to make changes to your website without writing any code. You can change text, styles, links, images, and more. To use the Visual Editor, you must first install the JavaScript Snippet or Node SDK and use `makeVisualChanges()` in your code. Then, install the [ezbot.ai Visual Editor Chrome Extension](../04-guides/visual/00-capabilities.md).
 
 ![Visual Editor](../img/visual-editor.png)
 
