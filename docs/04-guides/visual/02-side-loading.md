@@ -15,7 +15,7 @@ Our ezbot Visual Editor Chrome Extension is currently in beta and is pending Chr
 5. Click the **Load unpacked** button.
 6. Select the unzipped contents of the Visual Editor folder.
 7. Enable the Visual Editor extension.
-8. Complete your installation by following the in-extension installation instructions [here.](chrome-extension://dnaacccgllfmhlcjgoehniffflipikpi/install.html)
+8. Complete your installation by following the in-extension installation instructions: chrome-extension://dnaacccgllfmhlcjgoehniffflipikpi/install.html
 
 ![Enable Development Mode](../../img/side-load-1.jpg)
 

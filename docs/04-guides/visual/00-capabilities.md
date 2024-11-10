@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Capabilities
 
-This guide will help you understand the capabilities of the ezbot [Visual Editor.](../04-guides/visual/00-capabilities.md)
+This guide will help you understand the capabilities of the ezbot Visual Editor.
 
 :::warning
 
