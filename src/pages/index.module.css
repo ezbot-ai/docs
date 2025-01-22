@@ -17,8 +17,20 @@
   }
 }
 
+@media screen and (max-width: 996px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .button {
+    width: 100%;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }

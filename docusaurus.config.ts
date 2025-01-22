@@ -148,6 +148,11 @@ const config: Config = {
           position: "right",
           label: "Book a Demo",
         },
+        {
+          href: "https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi",
+          position: "right",
+          label: "Chrome Extension",
+        },
         // {
         //   href: "https://github.com/ezbot-ai/docs",
         //   label: "GitHub",

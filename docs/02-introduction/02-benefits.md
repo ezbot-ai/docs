@@ -15,7 +15,7 @@ ezbot integrates seamlessly with any website, app, or framework, allowing you to
 
 You can use ezbot in two ways:
 
-- **Visual Editor**: Create new user experiences with our [Chrome Extension](../04-guides/visual/00-capabilities.md) – no dev or coding required.
+- **Visual Editor**: Create new user experiences with our [Chrome Extension](https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi) – no dev or coding required.
 - **In-code**: Developers can use our JS Browser SDK to integrate ezbot’s powerful optimization engine directly into their stack.
 
 **Both implementations are powered by the same platform and can be used together.** For instance, you might find it quicker and easier to use the Visual Editor for a quick messaging test rather than involving an engineer to implement a new variable in your code. To use the Visual Editor, just install the JavaScript Snippet or browser SDK onto your website and get the [ezbot.ai Visual Editor.](../04-guides/visual/00-capabilities.md) For more details, check out the [get started section.](/category/get-started/)
