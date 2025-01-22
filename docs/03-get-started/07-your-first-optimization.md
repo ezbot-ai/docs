@@ -40,7 +40,7 @@ We recommend using the [Visual Editor](../04-guides/visual/00-capabilities.md) t
 
 ## Visual Editor
 
-The Visual Editor allows you to make changes to your website without writing any code. You can change text, styles, links, images, and more. To use the Visual Editor, you must first install the JavaScript Snippet or Node SDK and use `makeVisualChanges()` in your code. Then, install the [ezbot.ai Visual Editor Chrome Extension](../04-guides/visual/00-capabilities.md).
+The Visual Editor allows you to make changes to your website without writing any code. You can change text, styles, links, images, and more. To use the Visual Editor, you must first install the JavaScript Snippet or Node SDK and use `makeVisualChanges()` in your code. Then, install the [ezbot.ai Visual Editor Chrome Extension](https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi).
 
 ![Visual Editor](../img/visual-editor.png)
 
