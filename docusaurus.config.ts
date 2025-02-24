@@ -61,6 +61,41 @@ const config: Config = {
         disableInDev: false,
       },
     ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "https://www.ezbot.ai/post/experimentation-paradox",
+            from: "/blog/experimentation-paradox/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/four-1-min-ecommerce-optimizations",
+            from: "/blog/four-1-min-ecommerce-optimizations/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/small-business-case-study",
+            from: "/blog/small-business-case-study/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/ezbot-model",
+            from: "/blog/ezbot-model/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/what-is-ab-testing",
+            from: "/blog/what-is-ab-testing/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/stat-sig-purgatory",
+            from: "/blog/stat-sig-purgatory/",
+          },
+          {
+            to: "https://www.ezbot.ai/post/introducing-ezbot",
+            from: "/blog/introducing-ezbot/",
+          },
+        ],
+      },
+    ],
   ],
   themes: [
     // ... Your other themes.
@@ -78,6 +113,7 @@ const config: Config = {
         docsRouteBasePath: "/",
         indexDocs: true,
         docsDir: "docs",
+        blogDir: "blog",
       },
     ],
   ],
