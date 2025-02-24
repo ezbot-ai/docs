@@ -24,19 +24,15 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle text--secondary">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            target="_blank"
-            href="https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f"
-          >
-            Book a Demo
+          <Link className="button button--secondary button--lg" to="/welcome/">
+            Read the Docs
           </Link>
           <Link
             className="button button--secondary button--lg"
             target="_blank"
-            href="https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi"
+            href="https://www.ezbot.ai/get-started"
           >
-            Chrome Extension
+            Book a Demo
           </Link>
         </div>
       </div>

@@ -1,46 +1,59 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Install ezbot',
-    Svg: require('@site/static/img/gears-solid.svg').default,
+    title: "Install ezbot",
+    Svg: require("@site/static/img/gears-solid.svg").default,
     description: (
       <>
-        Simply copy/paste our code snippet on your website or use our JS SDK and you're ready to go
+        Simply copy/paste our code snippet on your website or use our JS SDK and
+        you're ready to go
       </>
     ),
   },
   {
-    title: 'Create Variations',
-    Svg: require('@site/static/img/users-solid.svg').default,
+    title: "Create Variations",
+    Svg: require("@site/static/img/users-solid.svg").default,
     description: (
       <>
-        Use our no-code Visual Editor or use our predictions in your code to test alternative images, text, colors, layouts, and more.
+        <p>
+          Use our
+          <Link
+            target="_blank"
+            href="https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi"
+          >
+            &nbsp;no-code visual editor&nbsp;
+          </Link>
+          or use our predictions in your code to test alternative images, text,
+          colors, layouts, and more.
+        </p>
       </>
     ),
   },
   {
-    title: 'Capture More Value',
-    Svg: require('@site/static/img/chart-simple-solid.svg').default,
+    title: "Capture More Value",
+    Svg: require("@site/static/img/chart-simple-solid.svg").default,
     description: (
       <>
-        As our AI learns, our predictions improve, along with your revenue – or any other KPI you care about – no human required after setup.
+        As our AI learns, our predictions improve, along with your revenue – or
+        any other KPI you care about – no human required after setup.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" fill="#a84af0" />
       </div>

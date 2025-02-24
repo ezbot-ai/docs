@@ -41,15 +41,6 @@ const config: Config = {
           onInlineTags: "throw",
           editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
         },
-        blog: {
-          path: "blog",
-          editUrl: "https://github.com/ezbot-ai/docs/tree/main/",
-          blogTitle: "ezbot Blog",
-          blogDescription: "The latest news and updates from ezbot",
-          blogSidebarTitle: "Recent Posts",
-          routeBasePath: "/blog",
-          blogSidebarCount: "ALL",
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -85,11 +76,8 @@ const config: Config = {
         // language: ["en", "zh"],
         // ```
         docsRouteBasePath: "/",
-        blogRouteBasePath: "/blog",
-        indexBlog: true,
         indexDocs: true,
         docsDir: "docs",
-        blogDir: "blog",
       },
     ],
   ],
@@ -142,9 +130,9 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { href: "https://ezbot.ai/blog", label: "Blog", position: "left" },
         {
-          href: "https://share.hsforms.com/1I0YA0vzaTj69zmgJ-p0o_Aqht4f",
+          href: "https://www.ezbot.ai/get-started",
           position: "right",
           label: "Book a Demo",
         },
@@ -170,19 +158,12 @@ const config: Config = {
           title: "Legal",
           items: [
             {
-              html: "<a href='#' onclick='window.displayPreferenceModal();return false;' id='termly-consent-preferences' class='footer__link-item'>Consent Preferences</a>",
-            },
-            {
               label: "Privacy Policy",
-              href: "https://app.termly.io/document/privacy-policy/399bfe57-580d-4feb-bf4f-91c34aca91d0",
+              href: "https://www.ezbot.ai/privacy-policy",
             },
             {
               label: "Terms and Conditions",
-              href: "https://app.termly.io/document/terms-of-service/fe66e8d4-698a-449d-9147-b1a324e29e1f",
-            },
-            {
-              label: "Cookie Policy",
-              href: "https://app.termly.io/document/cookie-policy/0a7414ae-9889-4b74-a15f-d2c83f7e1710",
+              href: "https://www.ezbot.ai/terms-of-use",
             },
           ],
         },
