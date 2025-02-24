@@ -1,32 +1,27 @@
 [
-    {
-        "name": "Doc Change",
-        "color": "#03ad0f",
-        "description": "managed in .github/labels.json"
-    },
-    {
-        "name": "Blog Change",
-        "color": "#00b0bd",
-        "description": "managed in .github/labels.json"
-    },
-    {
-        "name": "Page Change",
-        "color": "#b942f5",
-        "description": "managed in .github/labels.json"
-    },
-    {
-        "name": "Version Change",
-        "color": "#f5e942",
-        "description": "managed in .github/labels.json"
-    },
-    {
-        "name": "Dep Change",
-        "color": "#ad031a",
-        "description": "managed in .github/labels.json"
-    },
-    {
-        "name": "GitHub",
-        "color": "#ad0360",
-        "description": "managed in .github/labels.json"
-    }
+  {
+    "name": "Doc Change",
+    "color": "#03ad0f",
+    "description": "managed in .github/labels.json"
+  },
+  {
+    "name": "Page Change",
+    "color": "#b942f5",
+    "description": "managed in .github/labels.json"
+  },
+  {
+    "name": "Version Change",
+    "color": "#f5e942",
+    "description": "managed in .github/labels.json"
+  },
+  {
+    "name": "Dep Change",
+    "color": "#ad031a",
+    "description": "managed in .github/labels.json"
+  },
+  {
+    "name": "GitHub",
+    "color": "#ad0360",
+    "description": "managed in .github/labels.json"
+  }
 ]

@@ -17,11 +17,6 @@ Dep Change:
       - any-glob-to-any-file:
           - "**/package.json" # JS
 
-Blog Change:
-  - changed-files:
-      - any-glob-to-any-file:
-          - "blog/**"
-
 Page Change:
   - changed-files:
       - any-glob-to-any-file:
