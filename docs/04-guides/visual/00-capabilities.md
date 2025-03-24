@@ -6,15 +6,13 @@ sidebar_position: 1
 
 This guide will help you understand the capabilities of the ezbot Visual Editor.
 
-:::warning
-
-The Visual Editor is currently in beta. Please reach out to support@ezbot.ai for instructions on how to access it prior to its Chrome Web Store release.
-
-:::
-
 ## Using the Visual Editor
 
 ![Visual Editor](../../img/visual-editor.png)
+
+### Installation
+
+Install the Visual Editor Chrome Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi). An active ezbot subscription is required.
 
 ### Modes
 
