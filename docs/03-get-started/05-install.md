@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Installation
+# Web Tracker Installation
 
 To begin tracking your users, you must first decide whether you want to use the JavaScript Snippet _or_ the JavaScript SDK.
 

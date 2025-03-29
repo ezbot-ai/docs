@@ -37,7 +37,7 @@ Learn more about regular expressions here: [MDN Web Docs](https://developer.mozi
 
 ### Via JavaScript Snippet
 
-With the JavaScript Snippet installed in the `<head>` tag of your website, you can send custom reward signals to ezbot. This is useful for tracking user interactions such as clicks, form submissions, and more.
+With the JavaScript Snippet installed on your website, you can send custom reward signals to ezbot. This is useful for tracking user interactions such as clicks, form submissions, and more.
 
 Here is an example of how to send a custom reward signal to ezbot when a button is clicked:
 
@@ -62,11 +62,14 @@ Here is an example of how to send a custom reward signal to ezbot when a button 
 
 When the page is loaded, the ezbot library will be loaded and initialized and then when a user clicks the button, a reward signal will be sent to ezbot.
 
-#### Configuration Options
-
+<details>
+<summary>**Configuration Options**</summary>
+<div>
 - **key**: The string name of your reward.
 - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
 - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
+</div>
+</details>
 
 ### Via JavaScript SDK
 
@@ -91,11 +94,18 @@ button.addEventListener("click", function () {
 
 When the page is loaded, the ezbot library will be loaded and initialized and then when a user clicks the button, a reward signal will be sent to ezbot.
 
-#### Configuration Options
+### Guides
 
+See our [Installation Guides](/category/installation) for more framework-specific information on how to send rewards to ezbot.
+
+<details>
+<summary>**Configuration Options**</summary>
+<div>
 - **key**: The string name of your reward.
 - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
 - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
+</div>
+</details>
 
 ### Via REST API
 
