@@ -5,12 +5,12 @@ sidebar_label: Google Tag Manager
 
 # Google Tag Manager
 
-[Google Tag Manager (GTM)](https://tagmanager.google.com) is a tag management system that allows users to quickly and easily update measurement codes and related code fragments collectively known as tags on their website or mobile app from a web-based user interface. Once the small segment of GTM code has been added to a project, users can safely and easily deploy analytics and measurement tag configurations from a web-based UI without having to modify and deploy code directly.
+[Google Tag Manager (GTM)](https://tagmanager.google.com) is a free tag management system that allows users to quickly and easily add third-party code known as tags to their website or mobile app from a web-based user interface. These snippets of code are called tags. Once GTM has been added to a website, users can safely and easily deploy analytics and measurement tags from a web-based UI without having to modify and deploy code directly.
 
 ## Why Use Google Tag Manager for Deploying 3rd Party Code?
 
 - **Ease of Use:** GTM provides a user-friendly interface that allows marketers, analysts, and developers to add and update tags without needing to write or deploy code. This reduces the dependency on development cycles and speeds up the deployment process.
-- Centralized Management: GTM centralizes the management of all tags in one place. This makes it easier to manage and update tags across multiple websites or apps from a single interface.
+- **Centralized Management:** GTM centralizes the management of all tags in one place. This makes it easier to manage and update tags across multiple websites or apps from a single interface.
 
 - **Version Control:** GTM includes built-in version control, allowing users to create and manage different versions of their tag configurations. This makes it easy to roll back to a previous version if something goes wrong.
 
@@ -44,40 +44,44 @@ Overall, Google Tag Manager simplifies the process of deploying and managing thi
 
 The following code snippet initializes ezbot with support for changes made via our [Visual Editor](../visual/00-capabilities.md). It also tracks an ezbot reward every time an add-to-cart button is clicked. Make sure to tailor this script to match your use case.
 
-```
+```html
 <script>
-   (function() {
-     // initialize ezbot
-      var ezbotScript = document.createElement('script');
-      ezbotScript.src = "https://cdn.ezbot.ai/web-snippets/ezbot.min.js";
-      ezbotScript.onload = function() {
-         ezbot.initEzbot(99).then(function() {
-            ezbot.startActivityTracking({
-               minimumVisitLength: 5,
-               heartbeatDelay: 10,
-            });
-            ezbot.trackPageView();
-            ezbot.makeVisualChanges();
-         });
-      };
-      document.head.appendChild(ezbotScript);
-
-      // whenever the "Add to Cart" button is clicked, track a reward in ezbot:
-      var rewardElement = document.querySelector('button[type="submit"][name="add to bag"]');
-
-      if (rewardElement) {
-        rewardElement.addEventListener('click', function() {
-          if (typeof ezbot.trackRewardEvent === 'function') {
-            ezbot.trackRewardEvent({
-                key: "add_to_cart_button_clicked",
-                reward: 1,
-                rewardUnits: "count",
-            });
-          } else {
-            console.warn('ezbot.trackRewardEvent function is not defined');
-          }
+  (function () {
+    // initialize ezbot
+    var ezbotScript = document.createElement("script");
+    ezbotScript.src = "https://cdn.ezbot.ai/web-snippets/ezbot.min.js";
+    ezbotScript.onload = function () {
+      // replace `99` with your project ID
+      ezbot.initEzbot(99).then(function () {
+        ezbot.startActivityTracking({
+          minimumVisitLength: 5,
+          heartbeatDelay: 10,
         });
-       }
-   })();
+        ezbot.trackPageView();
+        ezbot.makeVisualChanges();
+      });
+    };
+    document.head.appendChild(ezbotScript);
+
+    // Example reward tracking code - adjust to your use case
+    // Whenever the "Add to Cart" button is clicked,
+    // track a reward in ezbot
+    var rewardElement = document.querySelector(
+      'button[type="submit"][name="add to bag"]',
+    );
+    if (rewardElement) {
+      rewardElement.addEventListener("click", function () {
+        if (typeof ezbot.trackRewardEvent === "function") {
+          ezbot.trackRewardEvent({
+            key: "add_to_cart_button_clicked",
+            reward: 1,
+            rewardUnits: "count",
+          });
+        } else {
+          console.warn("ezbot.trackRewardEvent is not defined");
+        }
+      });
+    }
+  })();
 </script>
 ```
