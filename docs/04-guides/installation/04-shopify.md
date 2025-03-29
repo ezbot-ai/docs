@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 sidebar_label: Shopify
 ---
 
@@ -7,11 +7,13 @@ sidebar_label: Shopify
 
 [Shopify](https://www.shopify.com) is a popular e-commerce platform that allows businesses of all sizes to create and run their online stores. It provides a user-friendly interface for store management, along with various customization options through themes and apps.
 
-## Install ezbot via Google Tag Manager
+## Install the Tracker & Track a Reward
 
-If you already have Google Tag Manager installed on your Shopify store, we recommend that you install ezbot via GTM following our [Google Tag Manager installation guide](./02-google-tag-manager.md).
+### via Google Tag Manager
 
-## Install ezbot via Shopify Theme
+If you already have Google Tag Manager installed on your Shopify store, we recommend that you install ezbot via GTM following our [Google Tag Manager installation guide](./03-google-tag-manager.md).
+
+### via Shopify Theme
 
 1. Log in to your [Shopify Admin](https://admin.shopify.com) dashboard.
 
@@ -21,9 +23,9 @@ If you already have Google Tag Manager installed on your Shopify store, we recom
 
 4. In the theme editor, locate and click on the **theme.liquid** file under the **Layout** folder. This file controls the structure of all pages in your store.
 
-5. Edit the script below to match your website. Replace the `99` with your project ID, and set up a reward function. An example is provided below.
+5. Edit the code snippet below to match your website. Replace the `99` with your project ID, and set up a reward function. An example is provided below.
 
-6. Paste your edited version of the script just before the closing `</body>` tag in the theme.liquid file. This ensures ezbot loads on all pages of your store.
+6. Paste your edited version of the code snippet just before the closing `</body>` tag in the theme.liquid file. This ensures ezbot loads on all pages of your store.
 
 7. Click **Save** to apply your changes. Your ezbot implementation is now live on your Shopify store. Please reach out to [ezbot support](mailto:support@ezbot.ai) if you need help with the installation.
 

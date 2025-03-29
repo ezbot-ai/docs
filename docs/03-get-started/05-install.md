@@ -1,30 +1,16 @@
 ---
 sidebar_position: 5
-tags: [rewards]
 ---
 
-# Web Tracker Installation
+# Installation
 
-To get started with ezbot, you need to install the ezbot library on your website. The ezbot library is a small piece of code that you add to your website. It will automatically load the ezbot library and start tracking your users.
+To begin tracking your users, you must first decide whether you want to use the JavaScript Snippet _or_ the JavaScript SDK.
 
-A complete installation requires two steps:
-
-- Tracking code must be loaded on _every_ page of your website.
-- You may optionally add a call to `trackRewardEvent` to optimize for a specific user action, or use [Page View Events as rewards in ezbot](/get-started/rewards#page-view-events).
-
-## via Google Tag Manager (GTM)
-
-If you have Google Tag Manager installed, you can install ezbot with just a few clicks. [Follow the steps in our new GTM Installation Guide here.](../04-guides/installation//02-google-tag-manager.md)
-
-## via JavaScript Snippet
+## JavaScript Snippet
 
 The easiest way to install ezbot is to use our JavaScript Snippet. The JavaScript Snippet is a small piece of code that you add to your website. It will automatically load the ezbot library and start tracking your users.
 
 If you're using a website builder like Wix, Squarespace, or WebFlow and you don't have access or the desire to modify your source code, the JavaScript Snippet is the best way to get started.
-
-To use the JavaScript Snippet, simply copy/paste the following code into the `<head>` tag of your website's HTML and change the commented values to the values corresponding to your project.
-
-If you need help installing the JavaScript Snippet, please contact us at [support@ezbot.ai](mailto:support@ezbot.ai).
 
 <details>  
 <summary>**JS Snippet Pros/Cons**</summary>  
@@ -46,63 +32,26 @@ If you need help installing the JavaScript Snippet, please contact us at [suppor
 </div>  
 </details>
 
-### Basic JS Snippet Installation
+To use the JavaScript Snippet, follow one of the installation methods below.
 
-Install the following in the `<head>` tag of your website
+If you need help installing the JavaScript Snippet, please contact us at [support@ezbot.ai](mailto:support@ezbot.ai).
 
-```html
-<script src="https://cdn.ezbot.ai/web-snippets/ezbot.min.js"></script>
-<script async>
-  await ezbot.initEzbot(0); // Replace 0 with your project ID
-  ezbot.startActivityTracking({
-      minimumVisitLength: 5,
-      heartbeatDelay: 10,
-  });
-  ezbot.trackPageView();
-  ezbot.makeVisualChanges();
-</script>
-```
+### Google Tag Manager (GTM)
 
-When the page is loaded, the ezbot library will be loaded and initialized.
+If you already have Google Tag Manager installed, you can install ezbot with just a few clicks. [Follow the steps in our new GTM Installation Guide here.](../04-guides/installation/03-google-tag-manager.md)
 
-:::important
+### Common Website Builders
 
-Make sure the code above is loaded on **every** page of your website. This is important for tracking user activity and applying visual changes. You may want to put it in a `layout`, depending on your framework.
+If you're using a website builder like Shopify or WordPress, we've written guides for you to install ezbot:
 
-:::
+- [Shopify](../04-guides/installation/04-shopify.md)
+- [WordPress](../04-guides/installation/05-wordpress.md)
 
-Then, on any page where you want to track a reward event (a conversion), add the following code:
+### Other Installation Methods
 
-```html
-<script async>
-  if (condition) {
-    // Replace with your condition
-    ezbot.trackRewardEvent({
-      key: "some_reward_key", // Replace with the name of your reward
-      reward: 1,
-      rewardUnits: "count",
-    });
-  }
-</script>
-```
+You can find guides for other JavaScript Snippet installation methods [here](/category/installation).
 
-See the [next section](/get-started/rewards) for more information and an example reward.
-
-#### Configuration Options
-
-- **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
-  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity page scroll depth activity.
-  - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds) after the minimum visit length.
-- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change. You can now use these events as rewards in ezbot. Learn more about rewards in the [next section](/get-started/rewards).
-- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events that ezbot can use to improve the quality of our recommendations. It takes an object with three properties:
-  - **key**: The string name of your reward.
-  - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
-  - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
-- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
-
-Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
-
-## via JavaScript SDK
+## JavaScript SDK
 
 If you're a developer and you want to integrate ezbot directly into your website or app, you can use our JavaScript SDK. The JavaScript SDK is a more powerful and performant way to integrate ezbot and gives you more control over how you use the platform.
 
@@ -123,58 +72,10 @@ If you're a developer and you want to integrate ezbot directly into your website
 </div>  
 </details>
 
-Install
+To install the JavaScript SDK, please see the Basic JavaScript SDK installation guide [here](../04-guides/installation/06-basic-sdk.md).
 
-```bash
-npm install @ezbot-ai/javascript-sdk
-```
+### Common JS Frameworks
 
-Use the following code to initialize ezbot and start tracking your users. Placement varies by your framework. Generally, you want it loaded on every page.
+If you're using a common JS framework like NextJS, we've written guides for you to install ezbot:
 
-```js
-import {
-  initEzbot,
-  startActivityTracking,
-  trackPageView,
-  trackRewardEvent,
-  makeVisualChanges,
-} from "@ezbot-ai/javascript-sdk";
-await initEzbot(0); // Replace 0 with your project ID
-startActivityTracking({
-  minimumVisitLength: 5,
-  heartbeatDelay: 10,
-});
-trackPageView();
-makeVisualChanges();
-```
-
-Then, anywhere you want to track a reward event (a conversion), add the following code:
-
-```js
-if (condition) {
-  // Replace with your condition
-  trackRewardEvent({
-    key: "name_of_your_reward", // Replace with the name of your reward
-    reward: 1,
-    rewardUnits: "count",
-  });
-}
-```
-
-#### Configuration Options
-
-- **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
-  - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
-  - **heartbeatDelay**: How often ezbot should check if the user is still on the page (in seconds).
-- **trackPageView**: Recommended. Sends a `pageViewed` event to ezbot. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change. You can now use these events as rewards in ezbot. Learn more about rewards in the [next section](/get-started/rewards).
-- **trackRewardEvent**: Optional. Use this function for sending ezbot custom events that ezbot can use to improve the quality of our recommendations. It takes an object with three properties:
-  - **key**: The string name of your reward.
-  - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
-  - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
-- **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
-
-Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
-
-## Other Installation Options
-
-- [React / Next.js](/guides/installation/nextjs)
+- [NextJS](../04-guides/installation/02-nextjs.md)

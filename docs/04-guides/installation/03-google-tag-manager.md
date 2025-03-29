@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 sidebar_label: Google Tag Manager
 ---
 
@@ -40,7 +40,7 @@ Overall, Google Tag Manager simplifies the process of deploying and managing thi
 
 7. Click **Save** and, from the **Workspace View**, click **Submit** to publish your changes. _Optionally,_ you may preview the new tag on your website before publishing by clicking **Preview** before **Submit.**
 
-## Code Snippet
+## Install the Tracker & Track a Reward
 
 The following code snippet initializes ezbot with support for changes made via our [Visual Editor](../visual/00-capabilities.md). It also tracks an ezbot reward every time an add-to-cart button is clicked. Make sure to tailor this script to match your use case.
 
