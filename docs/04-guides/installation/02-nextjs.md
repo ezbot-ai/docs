@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 sidebar_label: Next.js
 tags: [rewards]
 ---
@@ -8,7 +8,7 @@ tags: [rewards]
 
 Integrate ezbot’s JavaScript SDK into your Next.js project to leverage AI-driven experimentation directly in your code. Our SDK supports both in-code experimentation and the [Visual Editor.](../visual/00-capabilities.md)
 
-## Installation
+## Install the Tracker
 
 Install the SDK with the following command:
 
@@ -90,7 +90,13 @@ export function EzbotTestComponent() {
 }
 ```
 
-## Tracking Reward Events
+## Track a Reward
+
+### Using a Page View Event
+
+You can use a page view event as a reward signal in ezbot. You can learn more about using page view events as rewards [here](../../03-get-started/06-rewards.md#page-view-events).
+
+### Using a Reward Event
 
 To track user interactions like button clicks, use the trackRewardEvent function:
 
@@ -139,7 +145,9 @@ After initializing, you can access predictions via window.ezbot.predictions or b
 }
 ```
 
-## Configuration Options
+<details>
+<summary>**Configuration Options**</summary>
+<div>
 
 - **startActivityTracking**: Optional. This function tracks how long users are on each page of your website. Soon, you will be able to use activity data to score sessions in ezbot. It takes an object with two properties:
   - **minimumVisitLength**: The minimum time in seconds that a user must be on the page to begin measuring their activity.
@@ -150,5 +158,7 @@ After initializing, you can access predictions via window.ezbot.predictions or b
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
 - **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
+</div>
+</details>
 
 For additional options on sending rewards to ezbot, visit the [Rewards Section](/get-started/rewards).
