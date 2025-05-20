@@ -36,6 +36,10 @@ Make sure the code above is loaded on **every** page of your website. This is im
 
 :::
 
+:::tip
+If you need to track user activity across multiple domains (e.g., marketing site and checkout), check out our [Cross-Domain Tracking guide](./07-cross-domain.md).
+:::
+
 ## Track a Reward
 
 ### Using a Page View Event
@@ -71,6 +75,7 @@ Then, on any page where you want to track a reward event (a conversion), place t
   - **reward**: The reward value. Use 1 for the currently supported binary reward strategy.
   - **rewardUnits**: The type of reward units. We only support one type of rewardUnits today: `"count"`, but eventually, you'll be able to choose between `"count"`, `"dollars"`, and more.
 - **makeVisualChanges:** Optional. This enables ezbot to apply visual changes from the visual editor to your site. Call this when a new page is loaded. For Single Page Applications (SPAs), call this after a routing change.
+- **initEzbot**: Required. Initializes the ezbot tracker. If you need to track user activity across multiple domains, you can enable cross-domain tracking. See the [Cross-Domain Tracking guide](./07-cross-domain.md) for details.
 
 Learn about other options for sending reward signals to ezbot in the [next section](/get-started/rewards).
 

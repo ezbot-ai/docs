@@ -79,3 +79,9 @@ To install the JavaScript SDK, please see the Basic JavaScript SDK installation 
 If you're using a common JS framework like NextJS, we've written guides for you to install ezbot:
 
 - [NextJS](../04-guides/installation/02-nextjs.md)
+
+## Advanced Features
+
+### Cross-Domain Tracking
+
+If you need to track user activity across multiple domains (such as a marketing site and a checkout experience on a different domain), check out our [Cross-Domain Tracking guide](../04-guides/installation/07-cross-domain.md).
