@@ -69,6 +69,10 @@ trackPageView();
 makeVisualChanges();
 ```
 
+:::important
+You must send at least one event (e.g. page view, automated activity tracking, or reward event) from the ezbot tracker on the destination domain so that we can associate the data across domains.
+:::
+
 ## Track a Reward
 
 After initializing ezbot on both domains with cross-domain tracking enabled, you can send reward events from any domain as you normally would. More information on tracking rewards can be found [here](../../03-get-started/06-rewards.md).
