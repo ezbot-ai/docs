@@ -9,7 +9,7 @@ Cross-domain tracking is a feature that allows you to track user activity and se
 
 ## Web Tracker Implementation
 
-Initialize ezbot on both domains with the same projectId. More information on the basic setup process can be found
+Initialize ezbot on both domains with the same projectId and enable cross-domain tracking. More information on the basic setup process can be found
 [here](../../03-get-started/05-install.md).
 
 ### Via ezbot snippet
@@ -77,11 +77,10 @@ After initializing ezbot on both domains with cross-domain tracking enabled, you
 
 Under the hood, ezbot leverages Snowplow's cross-domain tracking, which:
 
-1. Adds a "\_sp" parameter to the querystring of outbound links that match the configured domains (aka link decoration)
-2. This parameter contains the domain user ID and click timestamp
-3. When a user navigates to the destination page, this information is captured
-4. The querystring is automatically removed from the destination URL
-5. Our enrichment process links the session data, enabling continuous user tracking across different domains
+1. Adds a "\_sp" parameter to the querystring of outbound links that match the configured domains (aka link decoration).
+2. This parameter contains the original domain user ID, click timestamp, sessionID, and userId.
+3. When a user navigates to the destination page, the ezbot tracker on the destination domain will call for predictions with the original sessionId and send it to our backend with events.
+4. Our enrichment process links the session data, enabling continuous user tracking across different domains.
 
 :::info
 The tracker doesn't immediately decorate all links but adds event listeners that activate when users interact with links. This ensures fresh timestamps and proper cross-domain identity preservation.
