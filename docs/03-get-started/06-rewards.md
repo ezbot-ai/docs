@@ -111,6 +111,12 @@ See our [Installation Guides](/category/installation) for more framework-specifi
 
 If you'd like to send us rewards from a backend service, please contact us at [support@ezbot.ai](mailto:support@ezbot.ai).
 
+## Advanced Tracking
+
+### Cross-Domain Tracking
+
+If you need to track user activity and send reward events across multiple domains (such as a marketing site and a checkout experience on a different domain), check out our [Cross-Domain Tracking guide](../04-guides/installation/07-cross-domain.md).
+
 ## Scoring
 
 Currently, ezbot supports a **Binary Reward Strategy.** This means each session is scored as follows:
