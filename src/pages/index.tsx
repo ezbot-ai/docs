@@ -30,9 +30,9 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             target="_blank"
-            href="https://www.ezbot.ai/get-started"
+            href="https://www.ezbot.ai/pricing"
           >
-            Book a Demo
+            Get Started Free
           </Link>
         </div>
       </div>

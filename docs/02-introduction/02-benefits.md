@@ -9,7 +9,7 @@ ezbot simplifies and reduces the risks of experimentation, saving you time and r
 
 ## Get Started Quickly and Easily
 
-ezbot integrates seamlessly with any website, app, or framework, allowing you to start optimizing in no time. [Get started today](https://www.ezbot.ai/get-started) to see ezbot in action on your website.
+ezbot integrates seamlessly with any website, app, or framework, allowing you to start optimizing in no time. [Get started free](https://www.ezbot.ai/pricing) to see ezbot in action on your website.
 
 ### Two Ways to Use ezbot
 
