@@ -19,10 +19,20 @@ function HomepageHeader() {
       }}
     >
       <div className="container">
-        <Heading as="h1" className="hero__title text--secondary">
-          {siteConfig.title}
+        <Heading
+          as="h1"
+          className={clsx("hero__title text--secondary", styles.heroTitle)}
+        >
+          Stop Guessing. Start Converting.
         </Heading>
-        <p className="hero__subtitle text--secondary">{siteConfig.tagline}</p>
+        <p
+          className={clsx(
+            "hero__subtitle text--secondary",
+            styles.heroSubtitle
+          )}
+        >
+          Put your optimization on autopilot.
+        </p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/welcome/">
             Read the Docs
@@ -30,13 +40,34 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             target="_blank"
-            href="https://www.ezbot.ai/get-started"
+            href="https://www.ezbot.ai/pricing"
           >
-            Book a Demo
+            Get Started Free
           </Link>
         </div>
       </div>
     </header>
+  );
+}
+
+function ValueProposition() {
+  return (
+    <section className={styles.valueProposition}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--8 col--offset-2">
+            <div className="text--center">
+              <Heading as="h2" className={styles.valueTitle}>
+                Optimize Your Website While You Sleep
+              </Heading>
+              <p className={styles.valueDescription}>
+                You know what you want to test. ezbot.ai does the rest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -46,6 +77,7 @@ export default function Home(): JSX.Element {
     <Layout title={`Optimize with AI`} description="ezbot.ai Documentation">
       <HomepageHeader />
       <main>
+        <ValueProposition />
         <HomepageFeatures />
       </main>
     </Layout>

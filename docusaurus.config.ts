@@ -166,11 +166,11 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { href: "https://ezbot.ai/blog", label: "Blog", position: "left" },
+        { href: "https://www.ezbot.ai/blog", label: "Blog", position: "left" },
         {
-          href: "https://www.ezbot.ai/get-started",
+          href: "https://www.ezbot.ai/pricing",
           position: "right",
-          label: "Book a Demo",
+          label: "Get Started Free",
         },
         {
           href: "https://chrome.google.com/webstore/detail/dnaacccgllfmhlcjgoehniffflipikpi",

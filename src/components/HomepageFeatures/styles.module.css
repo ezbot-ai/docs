@@ -1,11 +1,130 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: #ffffff;
 }
 
 .featureSvg {
-  height: 125px;
-  width: 125px;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.featuresGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.featureCard {
+  flex: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  max-width: 350px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.featureDescription {
+  text-align: center !important;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.featureDescription a {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.featureDescription a:hover {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-dark) !important;
+}
+
+.featureTitle {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  color: var(--ifm-color-primary-dark) !important;
+}
+
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 3rem 0;
+  }
+
+  .featuresGrid {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .featureSvg {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .featureCard {
+    padding: 2rem 1rem;
+    margin: 0 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .featureDescription {
+    font-size: 0.95rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .featureTitle {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Dark mode optimizations */
+[data-theme="dark"] .features {
+  background: var(--ifm-background-color);
+}
+
+[data-theme="dark"] .featureCard {
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme="dark"] .featureTitle {
+  color: var(--ifm-color-primary-light) !important;
+}
+
+[data-theme="dark"] .featureDescription {
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media screen and (max-width: 996px) {
+  [data-theme="dark"] .featureCard {
+    background: var(--ifm-color-emphasis-100);
+    border: 1px solid var(--ifm-color-emphasis-200);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 1rem;
+  }
 }

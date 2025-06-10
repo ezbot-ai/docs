@@ -9,7 +9,7 @@ Here's an overview of the required steps to get started with ezbot.
 
 To begin using ezbot, follow these steps:
 
-1. **Book a demo:** [Get started today](https://www.ezbot.ai/get-started) to see ezbot in action on your website.
+1. **Get Started Free:** With our [free trial](https://www.ezbot.ai/pricing), you can see ezbot in action on your website.
 2. **Install ezbot:** Follow the in-app instructions or our docs to quickly and easily install ezbot on any website. Use the project ID to install ezbot on your website. You must install either the JavaScript Snippet or the Browser SDK. This will enable ezbot to start collecting data and running experiments. Additionally, it allows you to use our Visual Editor to create and manage experiments.
 3. **Set Up a Reward Signal:** ezbot uses reward signals to score user sessions and optimize for your desired business outcomes. Anything can be a reward. For instance, a user getting a page, clicking a link, or checking out. To function properly, you must send at least one reward signal to ezbot as part of your installation.
 
