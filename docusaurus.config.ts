@@ -166,7 +166,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { href: "https://ezbot.ai/blog", label: "Blog", position: "left" },
+        { href: "https://www.ezbot.ai/blog", label: "Blog", position: "left" },
         {
           href: "https://www.ezbot.ai/pricing",
           position: "right",
