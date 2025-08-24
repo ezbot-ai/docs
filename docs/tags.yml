@@ -2,3 +2,7 @@ rewards:
   label: "rewards"
   description: "docs pertaining to ezbot reward signals"
   permalink: /rewards
+nextjs:
+  label: "nextjs"
+  description: "docs pertaining to using ezbot with nextjs"
+  permalink: /nextjs

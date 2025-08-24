@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 sidebar_label: Next.js
-tags: [rewards]
+tags: [rewards, nextjs]
 ---
 
 # Next.js
