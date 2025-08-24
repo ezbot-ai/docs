@@ -253,7 +253,3 @@ You have a couple of options to apply changes based on predictions.
   - Default to `[]` predictions and proceed. Log errors for analysis.
 - **UTM not respected:**
   - Confirm you pass `searchParams` to your server helper and use `extractUtmFromSearchParams`.
-
----
-
-If you’d like, I can also link this page from `README.md` and add it to any docs navigation you maintain.
